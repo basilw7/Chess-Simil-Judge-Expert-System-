@@ -1,0 +1,1868 @@
+
+[FRA]
+
+---
+sub
+---
+-LONG
+
+Soustrait des parties d'un fichier PGN. Les parties a soustraire sont celles
+contenues dans le fichier PGN spécifie en parametre. Les parties effectivement
+soustraites sont placees dans le fichier sub.pgn
+
+
+syntaxe
+-------
+
+sub [-gam=file1] [-out=file2] [-exa]
+
+- gam   : specifie le fichier dont les parties doivent etre soustraites au
+          fichier PGN courant
+- out   : precise le nom du fichier resultant
+- exa   : precise si on soustrait les parties dont les coups et l'ordre sont
+          strictement identiques
+
+
+exemples
+--------
+
+sub -gam=todelete.pgn -out=newfile.pgn
+... supprime du fichier courant les parties contenues dans todelete.pgn. La
+    correspondance se fait uniquement sur la position finale. Le fichier
+    resultant est newfile.pgn
+    
+sub -gam=todelete.pgn -exa
+... supprime du fichier courant les parties contenues dans todelete.pgn. La
+    correspondance se fait sur toutes les positions et l'ordre des coups. Le
+    fichier resultant est le fichier par defaut pgn-out.pgn
+
+-END
+
+----
+ddepd
+----
+-LONG
+
+Supprime les positions en double, triple (ou+) d'un fichier EPD afin de n'en
+laisser qu'une seule occurence
+
+
+syntaxe
+-------
+
+ddepd [-in=myEpd.epd] [-out=newEpd.epd]
+
+
+exemples
+--------
+
+ddepd -in=myPos.epd -out=purgPos.epd
+
+-END
+
+------
+openbk
+------
+-LONG
+
+Permet d'ouvrir un book créé par PgnScanner
+
+
+syntaxe
+-------
+
+openbk [mybook.psb]
+
+
+exemples
+--------
+
+openbk c:\mybook.psb
+openbk "c:\my mega book.psb"
+
+-END
+
+-----
+split
+-----
+-LONG
+
+Permet de deramifier toutes les variantes de chaque partie du PGN charge.
+Chaque variante est alors transformée en une partie et enregistre edans le
+fichier de sortie spécifié ou dans le fichier de sortie par defaut.
+
+
+syntaxe
+-------
+
+split [-out=file.pgn]
+
+-out   : specifie le fichier PGN de sortie qui recueillera les variantes
+         Si ce parametre n'est pas precise, le fichier pgn-out.pgn est utilise
+
+-END
+
+-----
+anabk
+-----
+-LONG
+
+Parcourt l'arbre du book charge a la recherche de positions repondant a des 
+criteres d'occurence. Ces positions peuvent alors etre automatiquement
+evaluees avec un moteur UCI externe (voir pgnscanner.ini) ou sauvegardees au
+format EPD. Si le fichier anabk.epd existe, les positions incluses sont
+utilisees comme positions-racines
+
+
+syntaxe
+-------
+
+anabk [-occ<n1] [-rnk=n2] [-tsk=epd/eval] [-ms=n3] [-stop] [-ply=n4] [-showpv]
+      [-out=my_epd.epd] [-ddup] [-vfy] [-dbg]
+
+-occ    : occurence maximale du coup menant a la position
+-rnk    : rang de la position a chercher dans la branche repondant au critere 
+          de -occ<n1. Utilisez -rnk=all pour enregistrer toutes les positions
+          de la branche et -rnk=end pour designer la derniere position
+-tsk    : tache a effectuer : =epd pour sauvegarder dans dans le fichier de
+          sortie et =eval pour evaluer la position trouvee par un moteur UCI
+          afin de sauvegarder le commentaire d'evaluation dans le book
+-ms     : nombre de milliseconde accordee a l'evaluation par moteur UCI
+-stop   : si pgnscanner doit stoper l'exploration d'une branche quand une
+          position est trouvee
+-ply    : profondeur maximale d'exploration en demi-coup a partir de la
+          position racine
+-showpv : pour afficher le detail de l'analyse du moteur UCI
+-out    : pour specifier un fichier ou seront stockes les positions trouvees.
+          Si ce parametre est absent, le fichier tree.epd sera utilise.
+-ddup   : pour supprimer les duplications de positions enregistrées dans le
+          fichier EPD de sortie. Cette opérations est nécessaire s'il y a des
+          transpositions dans le book.
+-vfy    : verifie la difference d'evaluation entre la position atteinte
+          repondant aux criteres et la derniere position atteinte. Si cette
+          difference est superieure a un pas de 1 du champ cmt du book, alors
+          la ligne est sauvegardee dans le fichier evaluated.pgn
+-dbg    : permet d'enregistrer dans le fichier de debogage anabk.dbg, les
+          analyses effectuees par le moteur
+
+
+exemple
+-------
+
+anabk -occ<2 -rnk=1 -tsk=eval -stop
+
+    pour rechercher et evaluer chaque premier coup d'une ligne jouee qu'une
+    seule fois
+
+anabk -occ<2 -rnk=end -tsk=epd -out=FinalPosOnSingleBranch.epd
+anabk -occ<4 -rnk=2 -tsk=eval -stop -ply=10
+anabk -ply=100 -vfy
+
+
+-END
+
+-------
+verbose
+-------
+-LONG
+
+Regle le mode verbeux. Permet parfois d'obtenir plus d'information comme par
+exemple l'affichage de l'echiquier interne.
+
+
+syntaxe
+-------
+
+verbose [on][off]
+
+-END
+
+----
+open
+----
+-LONG
+
+Ouvre un fichier PGN. La plupart des autres commandes necessitent qu'un fichier
+PGN ait ete ouvert au prealable. Ne pas oublier de preciser l'extention du
+fichier.
+
+
+syntaxe
+-------
+
+open [file name]
+
+
+exemples
+--------
+
+open my_games.pgn
+open "my games.pgn"
+
+-END
+
+-----
+merge
+-----
+-LONG
+
+Fusionne tous les fichiers PGN inclus dans un repertoire.
+
+
+syntaxe
+-------
+
+merge [-dir=directory_name] [-out=file.pgn]
+
+[-dir] : specifie le repertoire contenant les fichier PGN a fusionner
+[-out] : specifie le fichier resultant de la fusion. Si ce parametre est omis,
+         le fichier sera 'merge.pgn'.
+
+
+exemple
+-------
+
+merge -dir=c:\pgnscanner -out=merge.pgn
+
+-END
+
+------
+select
+------
+-LONG
+
+Selectionne des parties selon des criteres bases sur les champs PGN. Attention,
+si des champs de date sont utilises, il faut utiliser le format YYYY.MM.DD ou
+YYYY-MM-DD ou bien encore YYYY/MM/DD.
+
+
+syntaxe
+-------
+
+select [-out=file.pgn] [tag>=<value] [or/and] [tag>=<value]
+
+[-out]  : precise le fichier de destination. Si ce parametre est absent, le
+          fichier 'pgn-out' sera utilise
+[tag]   : champ PGN utilise pour la selection. Vous pouvez voir l'ensemble des
+          champs PGN possible en tapant 'tag".
+[or/and]: operateur booleen.
+
+
+exemples 
+--------
+
+select result=1-0
+... pour selectionner toutes les victoires des blancs
+
+select white="arion 1.6" and black=gaia
+... pour selectionner toutes les parties "Arion 1.6" vs "Gaia x.x".
+
+select -out=short.pgn plycount>20 and plycount<30
+... pour selectionner toutes les parties de 20 demi-coups minimum et 30 demi-
+    coups maximum et les sauvegarder dans short.pgn all.
+
+select -out=oldgames.pgn date<2001-01-31 or dateevent<2001/01/31
+... pour selectionner toutes les parties anterieures au 31 jan 2001 et les 
+    sauvegarder dans oldgames.pgn.
+
+select -out=strong.pgn whiteelo>2499 or blackelo>2499
+... pour selectionner toutes les parties où les blancs et les noirs ont un elo
+    superieur ou egal a 2500.
+
+-END
+
+----
+show
+----
+-LONG
+
+Affiche au format texte une partie. Veuillez regler le parametre 'printCmt' du
+fichier pgnscanner.ini pour afficher (ou non) les commentaires sous differentes
+formes.
+
+
+syntaxe
+-------
+
+show [n]
+
+[n] : numero sequentiel de la partie dans le fichier.
+
+-END
+
+------
+instxt
+------
+-LONG
+
+Insere une chaine de caracteres dans le champ PGN de toutes les parties du
+fichier.
+
+
+syntaxe
+-------
+
+instxt [tag=value] [-at=n]
+
+[tag]   : nom du champ PGN, ex: event, eventdate, source, white, black...
+[value] : texte a inserer.
+[-at]   : place où inserer la chaine.
+
+
+exemple
+-------
+
+instxt white="the best" -at=5
+... pour remplacer le champ [White "xxxxxxx"] par [White "xxxxthe bestxxx"]
+
+-END
+
+------
+reptxt
+------
+-LONG
+
+Remplace la valeur d'un champ PGN par une autre.
+
+
+syntaxe
+-------
+
+reptxt [tag=new-value] [-out=file.pgn]
+
+[tag]   : le champ a traiter.
+[-out]  : precise le fichier de destination. Si ce parametre est absent, le
+          fichier 'pgn-out' sera utilise.
+
+
+exemple
+-------
+
+reptxt event="My Great Tournament" -out=games.pgn
+
+-END
+
+------
+setcap
+------
+-LONG
+
+Change la casse d'un champ PGN. Permet aussi de ne traiter que la premiere
+lettre de chaque mot.
+
+
+syntaxe
+-------
+
+setcap [tag=up/down] [-out=file.pgn] [-f]
+
+[tag]  : le champ a traiter.
+[-out] : precise le fichier de destination. Si ce parametre est absent, le
+         fichier 'pgn-out' sera utilise.
+[-f]   : pour ne changer la casse que du premier caractere de chaque mot du
+         champ PGN.
+
+
+exemple
+-------
+
+setcap -out=greatone.pgn event=up
+... met en majuscules tous les noms d'evenement du fichier PGN et stocke les
+    parties dans greatone.pgn.
+
+setcap -out=cap.pgn white=up -f
+... met en majuscule le premier caractere du nom des blancs et enregistre les
+    parties dans cap.pgn.
+
+-END
+
+-----
+debug
+-----
+-LONG
+
+Deroule une partie a l'ecran a partir d'un demi-coup donne.
+
+
+syntaxe
+-------
+
+debug [gameNb] [after] [halfMv]
+
+[gameNb]         : le numero sequentiel de la partie dans le fichier PGN.
+[after] [halfMv] : demi-coup apres lequel il faut debuter.
+
+
+exemple
+-------
+
+debug 2 after 24
+... charge la 2eme partie du fichier et debute l'affichage a partir du 24eme
+    demi-coup.
+
+debug 589
+... charge la 589eme partie du fichier et debute l'affichage au 1er coup.
+
+-END
+
+----
+scan
+----
+-LONG
+
+Lance une recherche de detection selon les criteres actifs dans le fichier
+pgnscanner.ini
+
+
+syntaxe
+-------
+
+scan [-l=file.txt] [-e=file.epd] [-p=file.pgn]
+
+[-l] : precise le fichier de log de destination. Si ce parametre est absent, le
+       fichier 'log.txt' sera utilise.
+[-e] : precise le fichier de epd de destination. Si ce parametre est absent, le
+       fichier 'epd-out.epd' sera utilise.
+[-p] : precise le fichier de pgn de destination. Si ce parametre est absent, le
+       fichier 'pgn-out.pgn' sera utilise.
+
+-END
+
+----
+exit
+----
+-LONG
+
+Ferme pgnscanner.
+
+
+syntaxe
+-------
+
+exit
+
+-END
+
+---
+bye
+---
+-LONG
+
+Ferme pgnscanner.
+
+
+syntaxe
+-------
+
+
+bye
+
+-END
+
+-----
+salut
+-----
+-LONG
+
+Ferme pgnscanner.
+
+
+syntaxe
+-------
+
+salut
+
+-END
+
+----
+cmem
+----
+-LONG
+
+Regle la quantite de memoire allouee pour chaque commentaire de coup d'une
+partie.
+
+
+syntaxe
+-------
+
+cmem [n]
+
+[n] : nouvelle taille en octets.
+
+
+exemple
+-------
+
+cmem 1024
+... alloue 1024 octets pour chaque commentaire de coup.
+
+-END
+
+---
+cut
+---
+-LONG
+
+Coupe les parties d'un fichier PGN a un demi-coup donne en partant du debut ou
+de la fin.
+
+
+syntaxe
+-------
+
+cut [-ply=x] [-out=file] [-rev]
+
+[-out] : precise le fichier de destination. Si ce parametre est absent, le
+         fichier 'pgn-out' sera utilise.
+[-ply] : le demi-coup a partir duquel les parties doivent etre coupees.
+[-rev] : les demi-coups specifies par l'option -ply sont comptes en partant de
+         la fin.
+
+
+exemple
+-------
+
+cut -out=short.pgn -ply=6
+... coupe les parties a partir du 6eme demi-coup (3eme coup) et les enregistre
+    dans le fichier short.pgn.
+    
+cut -ply=8 -rev
+... coupe les parties a partir du 8eme demi-coup en partant de la fin.
+
+-END
+
+---
+dbl
+---
+-LONG
+
+Detecte les doublons absolus ou relatifs (doublons par transposition) jusqu'a
+un demi-coup donne ou sur la totalite des coups. Une chaine contenant le numero
+identifiant la famille de doublon est ajoutee dans le champ 'Annotator' de
+chaque partie. Les doublons absolus ont exactement les memes coups dans le meme
+ordre tandis que les doublons relatifs n'ont comparativement que la derniere
+position identique ainsi que celle situee au 2/3 de la partie. La detection par
+doublons relatifs permet de trouver les doublons par transposition (excepté le
+cas tres particulier ou la transposition a lieu au 2/3 de la partie)
+
+
+syntaxe
+-------
+
+dbl [-ply=x] [-occ>y] [-out=file]
+
+[-ply] : parties ayant la même position a ce demi-coup.
+[-occ] : occurence minimale souhaitee.
+[-out] : precise le fichier de destination. Si ce parametre est absent, le
+         fichier 'pgn-out' sera utilise.
+[-abs] : precise si les doublons recherches doivent etre absolus. Les doublons
+         absolus ont exactement le meme nombre et le meme ordre de coups.
+
+
+exemple
+-------
+
+dbl -ply=22 -occ>3 -out=doubles.pgn
+... pour detecter les parties atteignant la meme position au 22eme demi-coup,
+    qui sont au moins en 4 exemplaires et les enregistrer dans 'doubles.pgn'
+
+dbl -ply=10 -abs
+... pour detecter les doublons absolus jusqu'au 10eme demi-coup
+
+-END
+
+----
+fepd
+----
+-LONG
+
+Cherche dans le fichier PGN ouvert toutes les positions enregistrees dans le
+fichiers epd specifie. Les parties trouvees sont enregistrees dans un fichier
+du type 'epd-x.pgn' ou x correspond au numero sequentiel de la position dans le
+fichier EPD. Une chaine de la forme [Annotator "EPD 67 found after 4...Ng8"]
+est ajoutee dans le champ 'Annotator' de chaque partie.
+
+
+syntaxe
+-------
+
+fepd [epd-file]
+
+
+exemple
+-------
+
+fepd test.epd
+
+-END
+
+----
+ftrn
+----
+-LONG
+
+Reconstruit toutes les tableaux de tournoi d'un fichier PGN. Les tournois au
+systeme suisse ne sont pas supportes a cause du systeme de departage qui ne
+peut pas etre determine.
+
+
+syntaxe
+-------
+
+ftrn [-out=file] [-fmt=txt/html]
+
+[-out] : precise le fichier de destination. Si ce parametre est absent, le
+         fichier 'trnfound' sera utilise.
+[-fmt] : precise le format de sortie 'txt' ou 'html'.
+
+
+exemple
+-------
+ftrn -out=test.txt -fmt=txt
+... reconstruit tous les tournois dans le fichier test.txt.
+
+-END
+
+---
+elo
+---
+-LONG
+
+Calcule le classement elo de chaque joueurs repertorie dans le fichier PGN
+ouvert selon les parametres du fichier pgnscanner.ini
+
+
+syntaxe
+-------
+
+elo [-out=file.txt]
+
+[-out] : precise le fichier de destination. Si ce parametre est absent, le
+         fichier 'rating.txt' sera utilise.
+
+-END
+
+------
+setcmt
+------
+-LONG
+
+Regle le type de commentaire utilise pour l'affichage ou la sauvegarde des
+parties. Cette commande peut etre utilisee pour supprimer tous les commentaires
+d'un fichier PGN.
+
+
+syntaxe
+-------
+
+setcmt [full/partial/none] [-out=file.pgn]
+
+[-out]    : precise le fichier de destination. Si ce parametre est absent, le
+            fichier 'pgn-out.pgn' sera utilise.
+[full]    : conserve tous les commentaires originaux.
+[partial] : n'affiche ou ne sauvegarde que les commentaires de PgnScanner
+            (evaluation, profondeur, temps).
+[none]    : aucun commentaire n'est conserve.
+
+-END
+
+------
+givelo
+------
+-LONG
+
+Calcule et attribue un classement elo a chaque joueur repertorie dans le
+fichier. Chaque champ PGN "elo" des parties sera modifie en consequence.
+
+
+syntaxe
+-------
+
+givelo [-out=file.pgn]
+
+[-out]    : precise le fichier de destination. Si ce parametre est absent, le
+            fichier 'pgn-out.pgn' sera utilise.
+
+-END
+
+------
+delete
+------
+-LONG
+
+Selectionne des parties selon des criteres bases sur les champs PGN. Attention,
+si des champs de date sont utilises, il faut utiliser le format YYYY.MM.DD ou
+YYYY-MM-DD ou bien encore YYYY/MM/DD.
+
+
+syntaxe
+-------
+
+delete [-out=file.pgn] [tag>=<value] [or/and] [tag>=<value]
+
+[-out]  : precise le fichier de destination. Si ce parametre est absent, le
+          fichier 'pgn-out' sera utilise
+[tag]   : champ PGN utilise pour la selection. Vous pouvez voir l'ensemble des
+          champs PGN possible en tapant 'tag".
+[or/and]: operateur booleen.
+
+
+exemples 
+--------
+
+delete result=1-0
+... pour supprimer toutes les victoires des blancs
+
+delete white="arion 1.6" and black=gaia
+... pour supprimer toutes les parties "Arion 1.6" vs "Gaia x.x".
+
+delete -out=short.pgn plycount>20 and plycount<30
+... pour supprimer toutes les parties de 20 demi-coups minimum et 30 demi-coups
+    maximum et les sauvegarder dans short.pgn.
+
+delete -out=oldgames.pgn date<2001-01-31 or dateevent<2001/01/31
+... pour supprimer toutes les parties anterieures au 31 jan 2001. Le fichier
+    resultant est oldgames.pgn.
+
+delete -out=strong.pgn whiteelo>2499 or blackelo>2499
+... pour supprimer toutes les parties où les blancs et les noirs ont un elo
+    superieur ou egal a 2500. Le fichier resultant est strong.pgn.
+
+-END
+
+---
+syn
+---
+-LONG
+
+Cree une synthese de tournoi incluant le tableau de resultats et le log de
+detections.
+
+
+syntaxe
+-------
+
+syn [-out=my_syn.txt]
+
+[-out]  : precise le fichier de destination. Si ce parametre est absent, le
+          fichier 'synthesis.txt' sera utilise
+
+-END
+
+-----
+newbk
+-----
+-LONG
+
+Cree massivement un repertoire d'ouverture en fonction d'un fichier specifie
+ou bien de tous les fichiers PGN presents dans le sous-dossier 'pgn_book'.
+Si vous etes programmeur, vous pouvez generer votre propre repertoire 
+d'ouvertures et l'exploiter grace a la librairie dynamique 'accbook.dll' 
+fournie. Veuillez pour cela consulter l'exemple fourni avec accbook.dll.
+
+
+syntaxe
+-------
+
+newbk [minPly] [maxPly] [-pgn=games.pgn] [-out=my_book.psb] [!]
+
+[minPly] : nombre de demi-coups minimum souhaite.
+[maxPly] : nombre de demi-coups maximum souhaite.
+[-pgn]   : precise un fichier unique a utiliser pour creer le book. Si ce
+           parametre est absent, tous les fichiers PGN inclus dans le sous-
+           dossier '\pgn_book' seront utilises
+[-out]   : precise le nom du fichier d'ouvertures à créer. Si ce parametre est
+           absent, le fichier sera nommé 'book.psb'
+[!]      : charge immédiatement le book après sa création
+
+
+exemple
+-------
+
+newbk 16 40 -out=mybook.psb !
+
+note : entre minPly and maxPly, PgnScanner termine la variante si le dernier
+       coup n'est pas une capture, si tous les roques ont ete effectues et si
+       la plupart des pieces mineurs sont developpees. D'autres conditions sont
+       egalement requises.
+
+-END
+
+------
+showbk
+------
+-LONG
+
+Permet de naviguer dans le repertoire d'ouverture genere (book.psb). A noter
+que si un fichier book.psb a deja ete genere, celui-ci sera automatiquement
+charge au demarrage.
+Precision sur le champ 'cmt' :
+
+0 : pas de commentaire
+1 : (---) evaluation <= -110
+2 : (--)  evaluation ]-100; -45]
+3 : (-)   evaluation ]-45 ; -22]
+4 : (=)   evaluation ]-22 ; +22[
+5 : (+)   evaluation [+22 ; +45[
+6 : (++)  evaluation [+45 ;+110[
+7 : (+++) evaluation >= +110
+
+
+syntaxe
+-------
+
+showbk
+
+-END
+
+-----
+board
+-----
+-LONG
+
+Montre l'echiquier interne.
+
+
+syntaxe
+-------
+
+board
+
+-END
+
+---
+tag
+---
+-LONG
+
+Montre tous les champs PGN possible pour une partie.
+
+
+syntaxe
+-------
+
+tag
+
+-END
+
+----
+lang
+----
+-LONG
+
+Regle la langue par defaut. Surtout utile pour l'aide en ligne et l'affichage
+de l'echiquier interne.
+
+
+syntaxe
+-------
+
+lang
+
+-END
+
+-----
+dcmbk
+-----
+-LONG
+
+Supprime l'ensemble des commentaires calcules par un moteur et integres dans le
+book charge. Pour rappel, ces commentaires correspondent a des appreciations
+notees de 1 a 7 avec :
+
+0 : pas de commentaire
+1 : (-+) evaluation <= -110
+2 : (-/+) evaluation ]-110; -45]
+3 : (-=) evaluation ]-45 ; -22]
+4 : (=)  evaluation ]-22 ; +22[
+5 : (+=) evaluation [+22 ; +45[
+6 : (+/-) evaluation [+45 ;+110[
+7 : (+-) evaluation >= +110
+
+
+syntaxe
+-------
+
+dcmbk
+
+-END
+
+----
+help
+----
+-LONG
+
+anabk ... analyse le book charge et evalue (moteur externe) ou sauve les
+          positions atteintes
+board ... montre l'echiquier interne
+bye ..... ferme PgnScanner
+cmem .... augmente la capacite memoire des commentaires de chaque coup
+cut ..... coupe les parties apres un demi-coup donne
+dbl ..... detecte les doublons absolus ou par transposition
+dcmbk ... supprime tous les commentaires calcules du book charge
+ddepd ... supprime les positions en double d'un fichier EPD
+debug ... permet de derouler une partie a l'ecran a partir d'un demi-coup donne
+delete .. supprime des parties d'un fichier pgn
+instxt .. insere une chaine de caracteres dans un champ PGN
+elo ..... construit une liste de classement elo de tous les joueurs
+fepd .... recherche des positions au format EPD
+ftrn .... reconstruit l'ensembles des tournois joues
+givelo .. calcule et attribue un elo. Modifie les champ PGN relatifs au elo.
+lang .... regle la langue. Utile pour l'aide en ligne et l'affichage de
+          l'echiquier
+merge ... fusionne des fichiers PGN
+newbk ... cree massivement une bibliotheque d'ouverture
+open .... ouvre un fichier PGN
+openbk .. ouvre un book PgnScanner
+r/recall  propose les 6 dernieres commandes differentes tapees, meme apres
+          redemarrage
+reptxt .. remplace la valeur d'un champ PGN par une autre
+salut ... ferme pgnscanner
+scan .... lance la detection globale selon les criteres actifs du fichier
+          pgnscanner.ini
+select .. selectionne les parties selon des criteres bases sur les champs PGN
+          (elo, result...). 
+setcap .. change la casse les champs PGN ou bien celle du premier caractere de
+          chaque mot
+setcmt .. regle le format de commentaire associe a chaque coup. Permet aussi de
+          supprimer completement les commentaires
+show .... affiche une partie a l'ecran
+showbk .. permet de naviguer dans le repertoire genere
+split ... deramifie l'ensemble des variantes d'un PGN et les enregistre sous
+          forme de partie.
+sub ..... soustrait des parties au fichier PGN courant selon un fichier
+          specifie en parametre
+syn ..... cree une synthese de tous les tournois inclus dans le fichier PGN
+          ouvert
+tag ..... montre tous les champs PGN possibles.
+verbose . regle le mode verbeux pour obtenir plus d'informations dans certains
+          cas
+
+-END
+
+
+
+***************************************************************************************************************
+***************************************************************************************************************
+
+[ENG]
+
+---
+sub
+---
+-LONG
+
+Substract some games from the current PGN. Games to substract are those that
+are part of the PGN file specified in parameter. The games actually removed
+are stored in the sub.pgn file.
+
+
+syntax
+-------
+
+sub [-gam=file1] [-out=file2] [-exa]
+
+- gam   : specifies the file containing the games to be removed from the
+          current PGN
+- out   : names the resulting file
+- exa   : specifies that the detection must be based on the exact moves order
+          of the games and not just on the final and the game's 2/3 part
+          positions. Therefore, the detection excludes similar games by
+          transposition
+
+
+examples
+--------
+
+sub -gam=todelete.pgn -out=newfile.pgn
+... removes the games contained in the todelete.pgn file from the current PGN.
+    The matching point is only based on the final and 2/3 game's positions so
+    that transpositions games are also deleted. The resulting file is
+    newfile.pgn
+    
+sub -gam=todelete.pgn -exa
+... removes the games contained in the todelete.pgn file from the current PGN.
+    The matching point is based both on the positions and moves order so that
+    exact same games are deleted. The resulting file is the default output
+    file pgn-out.pgn
+
+-END
+
+-----
+ddepd
+-----
+-LONG
+
+Delete the positions duplications from an EPD-file, so that each remaining
+position has only one occurency.
+
+
+syntax
+-------
+
+ddepd [-in=myEpd.epd] [-out=newEpd.epd]
+
+
+example
+-------
+
+ddepd -in=myPos.epd -out=purgPos.epd
+
+-END
+
+------
+openbk
+------
+-LONG
+
+Open the specified book.
+
+
+syntax
+------
+
+openbk [mybook.psb]
+
+
+examples
+--------
+
+openbk c:\mybook.psb
+openbk "c:\my mega book.psb"
+
+-END
+
+-----
+split
+-----
+-LONG
+
+Split all the games sub-lines of the loaded PGN into a new file. Each sub-lines
+is transformed into a full game. If the output file is not specified, the
+default output file (pgn-out.pgn) will be used.
+
+
+syntax
+------
+
+split [-out=file.pgn]
+
+-out   : specify the output PGN file to store the resulting sub-lines
+
+-END
+
+-----
+anabk
+-----
+-LONG
+
+Run through the current book to find some positions matching occurence criteria
+These positions can then be automatically evaluated by an external UCI chess
+engine (see pgnscanner.ini) or simply saved in EPD format. If the anabk.epd
+file exists, the included positions are used as roots.
+
+
+syntax
+------
+
+anabk [-occ<n1] [-rnk=n2] [-tsk=epd/eval] [-ms=n3] [-stop] [-ply=n4] [-showpv]
+      [-out=my_epd.epd] [-ddup] [-vfy]
+      
+-occ    : maximum move's occurency leading to the position
+-rnk    : rank of the searched position in the branch matching the '-occ'
+          criteria. Use -rnk=all to save all the positions of the matching
+          branch and -rnk=end to only save the last one.
+-tsk    : task, =epd to save the found position and =eval to evaluate it with an
+          UCI engine
+-ms     : number of millisecond for the UCI engine evaluation
+-stop   : pgnscanner stop the search on a branch when a position is found
+-ply    : maximum search depth (in half moves) starting from de root position
+-showpv : to show the UCI engine pv details
+-out    : to specify an epd-file in order to save the found positions
+          If this parameter is missing, the tree.epd file will be used
+-ddup   : to delete the position's duplications from the resulting file. This
+          should be done if transpositions are presents in the book.
+-vfy    : verify the evaluation's difference between the reached position and
+          the last position matching the criteria. If the reached position has
+          an evaluation which is different than the book's 'cmt' field (at
+          least two step), then the line is saved in the evaluated.pgn file
+-dbg    : save the engine's analysis into the debug files anabk.dbg
+
+
+example
+-------
+
+anabk -occ<2 -rnk=1 -tsk=eval -stop
+    
+    to analyze each first move of any branch played only once (missing
+    parameters are set by default).
+
+anabk -occ<2 -rnk=end -tsk=epd -out=FinalPosOnSingleBranch.epd
+anabk -occ<4 -rnk=2 -tsk=eval -stop -ply=10
+anabk -ply=100 -vfy
+
+-END
+
+-------
+verbose
+-------
+-LONG
+
+Set the verbose mode to get more informations.
+
+
+syntax
+------
+
+verbose [on][off]
+-END
+
+----
+open
+----
+-LONG
+
+Open a pgn-file
+
+
+syntax
+------
+
+open [file name]
+
+
+examples
+--------
+
+open my_games.pgn
+open "my games.pgn"
+-END
+
+-----
+merge
+-----
+-LONG
+
+Merge all pgn-files found in a directory.
+
+
+syntax
+------
+
+merge [-dir=directory_name] [-out=file.pgn]
+
+[-dir] : specify the directory that contains the pgn-file to merge.
+[-out] : specify the final file. If not specified, the resulting file is
+         'merge.pgn'.
+
+
+example
+-------
+
+merge -dir=c:\pgnscanner -out=merge.pgn
+
+-END
+
+------
+select
+------
+-LONG
+
+Select some games from a pgn-file. By default, the resulting file is
+'pgn-out.pgn' but a pgn-file can be specified. If date-tag are used, you must
+use the YYYY.MM.DD format. Other standard characters as '/' or '-' in place of
+'.' are also accepted.
+
+
+syntax
+------
+
+select [-out=file.pgn] [tag>=<value] [or/and] [tag>=<value]
+
+[-out]  : specify the destination file.
+[tag]   : specify the pgn-tag used to select the games. Please type "tag" to
+          view all possible pgn-tag.
+[or/and]: boolean operator.
+
+
+examples
+--------
+
+select result=1-0
+... in order to select all games won by white.
+
+select white="arion 1.6" and black=gaia
+... in order to select all games "Arion 1.6" vs "Gaia x.x".
+
+select -out=short.pgn plycount>20 and plycount<30
+... in order to output in short.pgn all games with a number of half-moves
+    between 20 and 30.
+
+select -out=oldgames.pgn date<2001-01-31 or dateevent<2001/01/31
+... in order to output in oldgames.pgn all games that have been played before
+    january 31th, 2001.
+
+select -out=strong.pgn whiteelo>2499 or blackelo>2499
+... in order to select all games with an elo >= 2500.
+
+-END
+
+----
+show
+----
+-LONG
+
+Show a game of the loaded pgn-file. Please set the 'printCmt' parameter in the
+pgnscanner.ini in order to print the moves commentaries.
+
+
+syntax
+------
+
+show [n]
+
+[n] : number of the game.
+
+-END
+
+------
+instxt
+------
+-LONG
+
+Insert a string in a pgn-tag of all games of the loaded pgn-file.
+
+
+syntax
+------
+
+instxt [tag=value] [-at=n]
+
+[tag]   : name of the pgn-tag, example : event, eventdate, source, white,
+          black...
+[value] : text to insert.
+[-at]   : insert at this character number.
+
+
+example
+-------
+
+instxt white="the best" -at=5
+... in order to replace [white "xxxxxxx"] by [white "xxxxthe bestxxx"]
+
+-END
+
+------
+reptxt
+------
+-LONG
+
+Replace a tag-value by another one.
+
+
+syntax
+------
+
+reptxt [tag=new-value] [-out=file.pgn]
+
+[tag]  : the pgn-tag to replace
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'pgn-out.pgn'. The file's extension type is required.
+
+
+example
+-------
+
+reptxt event="My Great Tournament" -out=games.pgn
+
+-END
+
+------
+setcap
+------
+-LONG
+
+Upcase or lowcase a tag-value.
+
+
+syntax
+------
+
+setcap [tag=up/down] [-out=file.pgn] [-f]
+
+[tag]  : the pgn-tag to upcase or lowcase.
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'pgn-out.pgn'. The file's extension type is required.
+[-f]   : to upcase or lowcase only the first character of each word included in
+         the tag-value
+
+
+example
+-------
+
+setcap -out=greatone.pgn event=up
+... in order to upcase the name of the event and save ths games in the
+    greatone.pgn file
+
+setcap -out=cap.pgn white=up -f
+... in order to upcase the first characters of the name of the white players
+    and save the games in the cap.pgn file
+
+-END
+
+-----
+debug
+-----
+-LONG
+
+Unfold the game after a given half-move.
+
+
+syntax
+------
+
+debug [gameNb] [after] [halfMv]
+
+[gameNb]         : the game number of the pgn.
+[after] [halfMv] : the game's unfolding starts after the specified half-move.
+
+
+example
+-------
+
+debug 2 after 24
+... in order to load the 2nd game and start its unfolding after the 24th half-
+    move.
+
+debug 589
+... in order to load the 589th game and start its unfolding after the 1st half-
+    move.
+
+-END
+
+----
+scan
+----
+-LONG
+
+Scan and search for all selected items of the pgnscanner.ini file.
+
+
+syntax
+------
+
+scan [-l=file.txt] [-e=file.epd] [-p=file.pgn]
+
+[-l] : specify a destination file for log's comments. Without this parameter,
+       the default destination is 'log.txt'. The file's extension type is
+       required.
+[-e] : specify a destination file for epd diagrams. Without this parameter, the
+       default destination is 'epd-out.epd'. The file's extension type is
+       required.
+[-p] : specify a destination file for games. Without this parameter, the
+       default destination is 'pgn-out.pgn'. The file's extension type is
+       required.
+
+-END
+
+----
+exit
+----
+-LONG
+
+Close pgnscanner.
+
+
+syntax
+------ 
+
+exit
+
+-END
+
+---
+bye
+---
+-LONG
+
+Close pgnscanner.
+
+
+syntax
+------
+
+bye
+
+-END
+
+-----
+salut
+-----
+-LONG
+
+Close pgnscanner.
+
+
+syntax
+------
+
+salut
+
+-END
+
+----
+cmem
+----
+-LONG
+
+Set the allocated memory for each move's comment.
+
+
+syntax
+------
+
+cmem [n]
+
+[n] : new size in bytes.
+
+
+example
+-------
+
+cmem 1024
+... in order to allocate 1024 bytes for each move's comment.
+
+-END
+
+---
+cut
+---
+-LONG
+
+Cut all games of the loaded pgn-file after the specified ply.
+
+
+syntax
+------
+
+cut [-ply=x] [-out=file] [-rev]
+
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'pgn-out.pgn'. The file's extension type is required.
+[-ply] : the ply or 'half-move' after what the games must be cutted.
+[-rev] : the plies are now counted from the end
+
+example
+-------
+
+cut -out=short.pgn -ply=6
+... in order to cut all games after the 3rd move (the 6th half-move) and put
+    the results in the short.pgn file.
+
+cut -ply=8 -rev
+... cuts all games after the 8th counted from the end.
+
+-END
+
+---
+dbl
+---
+-LONG
+
+Detects absolute/positional doubles until a given ply or until the end. Please
+notice that a string containing a doubles family ID is added in the "Annotator"
+pgn-tag of the resulting games. The absolute doubles have exactly the same
+moves in the same order. The positional doubles have comparatively  only the
+final identical position and the one at the 2/3 part of the game. The
+positional doubles detection gives the possibility to find same games that have
+not the same order of moves (except those that unfortunatly have the
+transposition exactly at the 2/3 part of the game)
+
+
+syntax
+------
+
+dbl [-ply=x] [-occ>y] [-out=file] [-abs]
+
+[-ply] : this parameter specifies the ply number where we compare games for
+         doubles detection (optional, see example below).
+[-occ] : minimal needed occurency (optional, default is '-occ>1').
+[-out] : specifies a destination file. Without this parameter, the default
+         destination is 'pgn-out.pgn'. The file's extension type is required.
+[-abs] : specifies whether you want absolute doubles or not. Absolute doubles
+         are the replicated games having the exact same moves order.
+
+
+examples
+--------
+
+dbl -occ>3 -out=doubles.pgn
+... detects all games having the same final position, having at less 4
+    occurencies and puts them into the 'doubles.pgn' output file.
+    
+dbl -ply=22
+... detects all games having the same position at the 22th ply, having at less
+    2 occurencies (default) and puts them into the default output file
+    ('pgn-out.pgn')
+
+dbl -ply=10 -abs
+... detects absolute doubles until the 10th ply 
+   
+-END
+
+----
+fepd
+----
+-LONG
+
+find the games from the loaded pgn-file which match the positions of the
+specified epd-file. Resulting games are stored in a file as 'epd-x.pgn' where
+'x' corresponds to the line number of the epd in the epd-file. A string as
+[Annotator "EPD 67 found after 4...Ng8"] is added in the pgn-tag list of the
+game.
+
+
+syntax
+------
+
+fepd [epd-file]
+
+
+example
+-------
+
+fepd test.epd
+
+-END
+
+----
+ftrn
+----
+-LONG
+
+Split all tournament's grids from the open pgn-file. Swiss-tournaments are not
+reconstructed due to the unguessable used ties systems
+
+
+syntax
+------
+
+ftrn [-out=file] [-fmt=txt/html]
+
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'trnfound'. The file's extension type is required
+[-fmt] : specify a spliting format. 'txt' to generate text matrix or 'html' to
+         generate html matrix.
+
+
+example
+-------
+ftrn -out=test.txt -fmt=txt
+... to generate into test.txt all tournament's matrix from the open pgn-file.
+
+-END
+
+---
+elo
+---
+-LONG
+
+Calculate the ratings of all players of the loaded pgn-file according to
+specified parameters (see pgnscanner.ini). By default, the resulting list is
+saved in the 'rating.txt' file.
+
+
+syntax
+------
+
+elo [-out=file.txt]
+
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'rating.txt'. The file's extension type is required.
+
+-END
+
+------
+setcmt
+------
+-LONG
+
+Set the comment's type used when the games are saved or printed. This command
+can be used to remove all comments from a pgn-file.
+
+
+syntax
+------
+
+setcmt [full/partial/none] [-out=file.pgn]
+
+[-out]     : specify a destination file. Without this parameter, the default
+              destination is 'pgn-out.pgn'. The file's extension type is required.
+[full]     : all comment are fully saved or printed.
+[partial]  : only evaluation, depth and time data are saved or printed.
+[none]     : no comment are saved nor printed.
+
+-END
+
+------
+givelo
+------
+-LONG
+
+Calculate an elo and set the elo-fields of every pgn's game.
+
+
+syntax
+------
+
+givelo [-out=file.pgn]
+
+[-out] : specify a destination file. Without this parameter, the default
+         destination is 'pgn-out.pgn'. The file's extension type is required.
+
+-END
+
+------
+delete
+------
+-LONG
+
+Delete some games from a pgn-file. By default, the resulting file is
+'pgn-out.pgn' but a pgn-file can be specified. If date-tag are used, you must
+use the YYYY.MM.DD format. Other standard characters as '/' or '-' in place of
+'.' are also accepted.
+
+
+syntax
+------
+
+delete [-out=file.pgn] [tag>=<value] [or/and] [tag>=<value]
+
+[-out]  : specify the destination file.
+[tag]   : specify the pgn-tag used to select the games. Please type "tag" to
+          view all possible pgn-tag.
+[or/and]: boolean operator.
+
+
+examples 
+--------
+
+delete result=1-0
+... in order to delete all games won by white
+
+delete white="arion 1.6" and black=gaia
+... in order to delete all games "Arion 1.6" vs "Gaia x.x".
+
+delete -out=games.pgn plycount>20 and plycount<30
+... in order to delete all games with a number of half-moves between 20 and 30
+    and put the remaining games in games.pgn.
+
+delete -out=games.pgn date<2001-01-31 or dateevent<2001/01/31
+... in order to delete all games that have been played before january 31th,
+    2001 and put the remaining games in games.pgn.
+    
+-END
+
+---
+syn
+---
+-LONG
+
+Create a synthesis (matrix + log's commentaries) of the tournament(s) saved in
+the open pgn-file.
+
+
+syntax
+------
+
+syn [-out=my_syn.txt]
+
+[-out] : specify a destination file. Without this parameter, the default 
+         destination is 'synthesis.txt'. The file's extension type is required.
+
+-END
+
+-----
+newbk
+-----
+-LONG
+
+Create massively a book based on a single specified pgn file or on all the pgn
+files located in the 'pgn_book' sub-directory. You can generate a book for your
+own engine, and then  use it with the provided librairy 'accbook.dll'. Please
+see the example provided with accbook.
+
+
+syntax
+------
+
+newbk [minPly] [maxPly] [-pgn=games.pgn] [-out=my_book.psb]
+
+[minPly] : minimal ply (half-move) for the book lines.
+[maxPly] : maximum ply (half move) for the book lines.
+[-pgn]   : specify a single file used to create the book. If this parameter is
+           missing, then all pgn files located in the sub-directory '\pgn_book'
+           will be used
+[-out]   : the name of the new book. If not specified, the default name will be
+           'book.psb'
+[!]      : load the book immediatly after the creation
+
+
+example
+-------
+
+newbk 16 40 -out=mybook.psb !
+
+note : between minPly and maxPly, PgnScanner terminates the line if the last
+move is not a capture and if all castles have been done and if minor pieces are
+out of the start square. Other conditions are also required.
+
+-END
+
+------
+showbk
+------
+-LONG
+
+Navigate into the generated book (book.psb).
+Precision on the 'cmt' field :
+
+0 : no comment
+1 : (-+) evaluation <= -110
+2 : (-/+) evaluation in ]-100; -45]
+3 : (-=) evaluation in ]-45 ; -22]
+4 : (=)  evaluation in ]-22 ; +22[
+5 : (+=) evaluation in [+22 ; +45[
+6 : (+/-) evaluation in [+45 ;+110[
+7 : (+-) evaluation >= +110
+
+
+syntax
+------
+
+showbk
+
+-END
+
+-----
+board
+-----
+-LONG
+
+Show the current board.
+
+syntax:
+------
+
+board
+
+-END
+
+---
+tag
+---
+-LONG
+
+Show all possible pgn-tags included in any pgn game.
+
+
+syntax
+------
+
+tag
+
+-END
+
+----
+lang
+----
+-LONG
+
+set the default language, especially for this help book.
+
+
+syntax
+------
+
+lang
+
+-END
+
+-----
+dcmbk
+-----
+-LONG
+
+delete all the computed comments stored in the current book .
+Remind that these comments correspond to the scores from 1 to 7 such as :
+
+0 : no comment
+1 : (---) evaluation <= -110
+2 : (--)  evaluation in ]-110; -45]
+3 : (-)   evaluation in ]-45 ; -22]
+4 : (=)   evaluation in ]-22 ; +22[
+5 : (+)   evaluation in [+22 ; +45[
+6 : (++)  evaluation in [+45 ;+110[
+7 : (+++) evaluation >= +110
+
+
+syntaxe
+-------
+
+dcmbk
+
+-END
+
+----
+help
+----
+-LONG
+
+anabk ... analyze the current book and evaluate (external engine) or save
+          specified positions
+board ... show the current board
+bye ..... close PgnScanner
+cmem .... increase comment's buffers for each move
+cut ..... cut all games after a given ply
+dbl ..... detect the absolute or 'positional' doubles
+dcmbk ... erase all the auto-calculated comments of the loaded book
+ddepd ... delete the double (and more) positions of an EPD-file
+debug ... show a game of the open pgn-file after a given ply
+delete .. delete some games from a pgn-file
+instxt .. insert a string in a pgn-tag of all games of the loaded pgn-file
+elo ..... calculate the ratings of all players of the loaded pgn-file
+fepd .... find games which match specified positions of an epd-file
+ftrn .... reconstruct all tournament grids of a pgn-file (except swiss-
+          tournament)
+givelo .. calculate an elo and set the elo-fields of every pgn game
+lang .... set the used language, especially for this help book
+merge ... merge all pgn-files included in a directory.
+newbk ... massively create an internal book
+open .... open a pgn-file
+openbk .. open a PgnScanner's book
+r/recall  list the last 6 entered different commands, even after a restart
+reptxt .. replace a tag-value by another one
+salut ... close pgnscanner
+scan .... run the global detection process according to active criteria of the
+          pgnscanner.ini
+select .. select some games from a pgn-file according to pgn-tag (elo,result..)
+setcap .. upcase or lowcase a tag-value or only the first character of each
+          word
+setcmt .. set comment's type used when games are saved or printed. Can remove
+          comments
+show .... show a game from the loaded pgn-file
+showbk .. navigate into the generated book
+split ... split all the sub-lines of a PGN and store them into a new file as
+          full games.
+sub ..... remove the games contained in a specified file from the current 
+          loaded pgn-file
+syn ..... create a synthesis of the tournament(s) saved in the open pgn-file
+tag ..... show all known standard pgn-tag
+verbose . set verbose mode to get more informations
+
+-END
+
+
+
+

@@ -1,0 +1,1629 @@
+White(1): e4
+
+              Searching all legal moves.----------------------------------
+              clearing hash tables
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.09  -0.20   1. Nf3 Nf6 2. d4 d6 3. Nc3 Bf5 4. Bf4
+                                    Nbd7
+                8     0.20  -0.10   1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4 4. d4
+                                    e6
+                8->   0.26  -0.10   1. e4 Nc6 2. Nf3 Nf6 3. e5 Ng4 4. d4
+                                    e6
+                9     0.57   0.03   1. e4 Nc6 2. Nf3 Nf6 3. Nc3 d5 4. e5
+                                    Ne4 5. d4 Nxc3 6. bxc3
+              time=1.00  cpu=51%  mat=0  n=758279  fh=86%  nps=758k
+              ext-> chk=8232 cap=4662 pp=235 1rep=445 mate=1
+              predicted=0  nodes=758279  evals=365501
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 22%(depth)  55%(sat)  88%(pawn)
+              hashing-> 0%(exact)  14%(lower)  0%(upper)
+Black(1): c5
+White(2): Nf3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.11   0.31   2. Nf3 d5 3. exd5 Qxd5 4. Nc3 Qe6+
+                                    5. Be2 Nf6
+                7     0.17   0.41   2. d4 d5 3. dxc5 dxe4 4. Qxd8+ Kxd8
+                                    5. Nc3 Nf6 6. Bf4
+                7->   0.22   0.41   2. d4 d5 3. dxc5 dxe4 4. Qxd8+ Kxd8
+                                    5. Nc3 Nf6 6. Bf4
+                8     0.34   0.08   2. d4 cxd4 3. Qxd4 Nc6 4. Qd1 Nf6 5.
+                                    Nc3 e5
+                8     0.45   0.32   2. Nf3 Nc6 3. Nc3 Nf6 4. Bc4 Na5 5.
+                                    d3 Nxc4 6. dxc4
+                8->   0.52   0.32   2. Nf3 Nc6 3. Nc3 Nf6 4. Bc4 Na5 5.
+                                    d3 Nxc4 6. dxc4
+                9     0.70   0.39   2. Nf3 Nc6 3. Nc3 Nf6 4. d4 cxd4 5.
+                                    Nxd4 Nxd4 6. Qxd4 d6
+                9->   0.94   0.39   2. Nf3 Nc6 3. Nc3 Nf6 4. d4 cxd4 5.
+                                    Nxd4 Nxd4 6. Qxd4 d6
+              time=1.00  cpu=93%  mat=0  n=1872731  fh=90%  nps=1872k
+              ext-> chk=44918 cap=9784 pp=303 1rep=4068 mate=23
+              predicted=0  nodes=1872731  evals=838574
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 18%(depth)  82%(sat)  91%(pawn)
+              hashing-> 0%(exact)  11%(lower)  0%(upper)
+Black(2): Nc6
+White(3): d4
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6     0.08   0.32   3. Nc3 Nf6 4. Bc4 Na5 5. d3 Nxc4 6.
+                                    dxc4
+                6->   0.08   0.32   3. Nc3 Nf6 4. Bc4 Na5 5. d3 Nxc4 6.
+                                    dxc4
+                7     0.11   0.39   3. Nc3 Nf6 4. d4 cxd4 5. Nxd4 Nxd4
+                                    6. Qxd4 d6
+                7->   0.16   0.39   3. Nc3 Nf6 4. d4 cxd4 5. Nxd4 Nxd4
+                                    6. Qxd4 d6
+                8     0.24   0.27   3. Nc3 Nf6 4. d4 e6 5. Bf4 d5 6. dxc5
+                                    Bxc5
+                8->   0.36   0.27   3. Nc3 Nf6 4. d4 e6 5. Bf4 d5 6. dxc5
+                                    Bxc5
+                9     0.66   0.40   3. Nc3 Nf6 4. Be2 e5 5. O-O d6 6. d3
+                                    Nd4 7. Bg5 Nxe2+ 8. Qxe2
+                9->   0.84   0.40   3. Nc3 Nf6 4. Be2 e5 5. O-O d6 6. d3
+                                    Nd4 7. Bg5 Nxe2+ 8. Qxe2
+              time=1.00  cpu=88%  mat=0  n=1800203  fh=88%  nps=1800k
+              ext-> chk=20124 cap=10912 pp=140 1rep=1111 mate=52
+              predicted=0  nodes=1800203  evals=790399
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 18%(depth)  77%(sat)  91%(pawn)
+              hashing-> 0%(exact)  11%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.08   0.37   3. d4 cxd4 4. Nxd4 e5 5. Nb5 Bb4+ 6.
+                                    N1c3 Nf6
+                7->   0.08   0.37   3. d4 cxd4 4. Nxd4 e5 5. Nb5 Bb4+ 6.
+                                    N1c3 Nf6
+                8     0.27   0.27   3. d4 e6 4. Nc3 Nf6 5. Bf4 d5 6. dxc5
+                                    Bxc5
+                8->   0.27   0.27   3. d4 e6 4. Nc3 Nf6 5. Bf4 d5 6. dxc5
+                                    Bxc5
+                9     0.59   0.36   3. d4 e6 4. Nc3 Nf6 5. Bb5 a6 6. Bxc6
+                                    dxc6 7. O-O
+                9->   0.59   0.36   3. d4 e6 4. Nc3 Nf6 5. Bb5 a6 6. Bxc6
+                                    dxc6 7. O-O
+              time=0.61  cpu=90%  mat=0  n=1154515  fh=88%  nps=1892k
+              ext-> chk=17280 cap=6169 pp=125 1rep=521 mate=4
+              predicted=0  nodes=1154515  evals=508635
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 17%(depth)  59%(sat)  92%(pawn)
+              hashing-> 0%(exact)  10%(lower)  0%(upper)
+Black(3): cxd4
+White(4): b3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.13   0.60   4. Nxd4 Qa5+ 5. Nc3 Nxd4 6. Qxd4 e5
+                                    7. Qd5 Qc7
+                7->   0.16   0.60   4. Nxd4 Qa5+ 5. Nc3 Nxd4 6. Qxd4 e5
+                                    7. Qd5 Qc7
+                8     0.27   0.41   4. Nxd4 e5 5. Nb5 d6 6. Bg5 f6 7. Be3
+                                    Be6
+                8->   0.33   0.41   4. Nxd4 e5 5. Nb5 d6 6. Bg5 f6 7. Be3
+                                    Be6
+                9     0.55   0.53   4. Nxd4 e5 5. Nb5 Nf6 6. N1c3 d6 7.
+                                    Bc4 a6 8. Na3 <HT>
+                9->   0.66   0.53   4. Nxd4 e5 5. Nb5 Nf6 6. N1c3 d6 7.
+                                    Bc4 a6 8. Na3 <HT>
+              time=1.00  cpu=92%  mat=-1  n=2337889  fh=90%  nps=2337k
+              ext-> chk=47052 cap=11950 pp=108 1rep=3070 mate=67
+              predicted=0  nodes=2337889  evals=723284
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 25%(raw) 20%(depth)  89%(sat)  95%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.06  -0.57   4. b3 d5 5. Nbd2 dxe4 6. Nxe4 Nf6 7.
+                                    Nxf6+ exf6 8. Bb5
+                7->   0.06  -0.57   4. b3 d5 5. Nbd2 dxe4 6. Nxe4 Nf6 7.
+                                    Nxf6+ exf6 8. Bb5
+                8     0.22  -0.81   4. b3 e5 5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7.
+                                    Nbxd2 Nf6 8. Bb5 d6
+                8->   0.22  -0.81   4. b3 e5 5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7.
+                                    Nbxd2 Nf6 8. Bb5 d6
+                9     0.59  -0.69   4. b3 e5 5. Bc4 Nf6 6. O-O Be7 7. Nbd2
+                                    d5 8. Bd3
+                9->   0.59  -0.69   4. b3 e5 5. Bc4 Nf6 6. O-O Be7 7. Nbd2
+                                    d5 8. Bd3
+              time=0.59  cpu=89%  mat=-1  n=1249216  fh=89%  nps=2117k
+              ext-> chk=20505 cap=8218 pp=199 1rep=841 mate=0
+              predicted=0  nodes=1249216  evals=459346
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 19%(depth)  65%(sat)  95%(pawn)
+              hashing-> 0%(exact)  8%(lower)  0%(upper)
+Black(4): e5
+White(5): Bg5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6     0.09  -0.97   5. c3 d5 6. Bb5 dxc3 7. Nxc3 d4
+                6     0.09  -0.81   5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7. Nbxd2 Nf6
+                                    8. Bb5 d6
+                6->   0.12  -0.81   5. Bd3 Bb4+ 6. Bd2 Bxd2+ 7. Nbxd2 Nf6
+                                    8. Bb5 d6
+                7     0.14  -0.73   5. Bd3 Bb4+ 6. Bd2 Nf6 7. Bxb4 Nxb4
+                                    8. O-O d6
+                7     0.27  -0.69   5. Bc4 Bb4+ 6. Bd2 Be7 7. b4 d5 8.
+                                    exd5 Nxb4
+                7->   0.33  -0.69   5. Bc4 Bb4+ 6. Bd2 Be7 7. b4 d5 8.
+                                    exd5 Nxb4
+                8     0.47  -0.86   5. Bc4 Bb4+ 6. Nfd2 Nf6 7. O-O O-O
+                                    8. Qf3 Na5 9. Ba3 Nxc4 10. Bxb4
+                8->   0.75  -0.86   5. Bc4 Bb4+ 6. Nfd2 Nf6 7. O-O O-O
+                                    8. Qf3 Na5 9. Ba3 Nxc4 10. Bxb4
+              time=1.00  cpu=86%  mat=-1  n=2099062  fh=89%  nps=2099k
+              ext-> chk=26272 cap=13326 pp=751 1rep=947 mate=20
+              predicted=0  nodes=2099062  evals=856524
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 24%(raw) 20%(depth)  82%(sat)  95%(pawn)
+              hashing-> 0%(exact)  10%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.11  -1.28   5. Bg5 Be7 6. Bxe7 Ngxe7 7. c3 O-O
+                                    8. cxd4 Qa5+ 9. Ke2
+                8->   0.11  -1.28   5. Bg5 Be7 6. Bxe7 Ngxe7 7. c3 O-O
+                                    8. cxd4 Qa5+ 9. Ke2
+              time=0.11  cpu=72%  mat=-1  n=195791  fh=88%  nps=1779k
+              ext-> chk=1972 cap=1448 pp=106 1rep=36 mate=0
+              predicted=0  nodes=195791  evals=81016
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 21%(depth)  13%(sat)  95%(pawn)
+              hashing-> 0%(exact)  12%(lower)  0%(upper)
+Black(5): Qa5+
+White(6): Bd2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.08  -0.64   6. Bd2 Bb4 7. Bd3 Nf6 8. O-O O-O 9.
+                                    h3
+                8     0.16  -0.68   6. Bd2 Bb4 7. a3 d5 8. Bxb4 Nxb4 9.
+                                    Nbd2 Nc6
+                8->   0.21  -0.68   6. Bd2 Bb4 7. a3 d5 8. Bxb4 Nxb4 9.
+                                    Nbd2 Nc6
+                9     0.32  -0.66   6. Bd2 Bb4 7. Bd3 Nf6 8. O-O O-O 9.
+                                    Bxb4 Qxb4 10. Nbd2
+                9->   0.43  -0.66   6. Bd2 Bb4 7. Bd3 Nf6 8. O-O O-O 9.
+                                    Bxb4 Qxb4 10. Nbd2
+               10     0.85  -0.80   6. Bd2 Bb4 7. a3 Nf6 8. Bxb4 Nxb4 9.
+                                    Nbd2 Nc6 10. b4 Qc7 11. b5 Na5 <HT>
+              time=1.00  cpu=90%  mat=-1  n=2217317  fh=89%  nps=2217k
+              ext-> chk=30448 cap=11737 pp=1314 1rep=975 mate=4
+              predicted=0  nodes=2217317  evals=722675
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 25%(raw) 20%(depth)  87%(sat)  95%(pawn)
+              hashing-> 0%(exact)  14%(lower)  0%(upper)
+Black(6): Bb4
+White(7): a3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6->   0.08  -0.68   7. a3 d5 8. Bxb4 Nxb4 9. Nbd2 Nc6
+                7     0.10  -0.80   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. Bc4 O-O
+                                    10. O-O Qc5
+                7     0.15  -0.59   7. Bc4 Nf6 8. O-O Nxe4 9. Re1 Nxd2
+                                    10. Nbxd2
+                7     0.16  -0.56   7. Bd3 Nf6 8. O-O O-O 9. Bxb4 Qxb4
+                                    10. Nbd2
+                7->   0.19  -0.56   7. Bd3 Nf6 8. O-O O-O 9. Bxb4 Qxb4
+                                    10. Nbd2
+                8     0.24  -0.80   7. Bd3 Nf6 8. O-O O-O 9. a3 Bxd2 10.
+                                    Nbxd2 Qc5
+                8     0.33  -0.79   7. Bc4 Nf6 8. O-O O-O 9. Qe2 Qc7 10.
+                                    c3 Bc5
+                8     0.38  -0.62   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. b4 Qc7
+                                    10. b5 Na5 11. Ng5
+                8->   0.46  -0.62   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. b4 Qc7
+                                    10. b5 Na5 11. Ng5
+                9     0.52  -0.87   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. Bc4 O-O
+                                    10. O-O Qc3 11. Ng5 d6
+                9     0.88  -0.78   7. Bd3 Nf6 8. O-O O-O 9. Bg5 d5 10.
+                                    Bxf6 gxf6 11. Nbd2 dxe4 12. Bxe4
+              time=1.00  cpu=89%  mat=-1  n=2088477  fh=89%  nps=2088k
+              ext-> chk=23233 cap=12953 pp=746 1rep=474 mate=1
+              predicted=0  nodes=2088477  evals=773585
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 28%(raw) 24%(depth)  83%(sat)  95%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.08  -0.62   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. b4 Qc7
+                                    10. b5 Na5 11. Ng5
+                8->   0.08  -0.62   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. b4 Qc7
+                                    10. b5 Na5 11. Ng5
+                9     0.16  -0.87   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. Bc4 O-O
+                                    10. O-O Qc3 11. Ng5 d6
+                9->   0.16  -0.87   7. a3 Bxd2+ 8. Nbxd2 Nf6 9. Bc4 O-O
+                                    10. O-O Qc3 11. Ng5 d6
+              time=0.16  cpu=100%  mat=-1  n=296853  fh=90%  nps=1855k
+              ext-> chk=3091 cap=1702 pp=225 1rep=87 mate=0
+              predicted=0  nodes=296853  evals=83531
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 32%(raw) 21%(depth)  22%(sat)  94%(pawn)
+              hashing-> 0%(exact)  16%(lower)  0%(upper)
+Black(7): Bxd2+
+White(8): Nfxd2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.09  -0.85   8. Nbxd2 Nf6 9. Bc4 O-O 10. O-O d5
+                                    11. exd5 Nxd5
+                8->   0.16  -0.85   8. Nbxd2 Nf6 9. Bc4 O-O 10. O-O d5
+                                    11. exd5 Nxd5
+                9     0.25  -0.75   8. Nbxd2 Nf6 9. Bc4 O-O 10. O-O Qd8
+                                    11. Qe2 d6 12. Rad1
+                9->   0.30  -0.75   8. Nbxd2 Nf6 9. Bc4 O-O 10. O-O Qd8
+                                    11. Qe2 d6 12. Rad1
+               10     0.47  -0.91   8. Nbxd2 Nf6 9. Bc4 O-O 10. O-O Qd8
+                                    11. Bd5 d6 12. Bxc6 bxc6
+              time=1.00  cpu=95%  mat=-4  n=2230508  fh=90%  nps=2230k
+              ext-> chk=29940 cap=7777 pp=1663 1rep=1569 mate=0
+              predicted=0  nodes=2230508  evals=724858
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 24%(raw) 19%(depth)  90%(sat)  93%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                9     0.16  -1.14   8. Nfxd2 d5 9. exd5 Qxd5 10. c4 Qa5
+                                    11. Bd3 Nb4 12. Qe2
+                9->   0.17  -1.14   8. Nfxd2 d5 9. exd5 Qxd5 10. c4 Qa5
+                                    11. Bd3 Nb4 12. Qe2
+               10     0.38  -1.22   8. Nfxd2 d5 9. Bd3 Nf6 10. O-O O-O
+                                    11. f4 Qc5 12. fxe5 Nxe5
+               10->   0.38  -1.22   8. Nfxd2 d5 9. Bd3 Nf6 10. O-O O-O
+                                    11. f4 Qc5 12. fxe5 Nxe5
+              time=0.39  cpu=71%  mat=-4  n=902679  fh=90%  nps=2314k
+              ext-> chk=8774 cap=2534 pp=670 1rep=373 mate=0
+              predicted=0  nodes=902679  evals=285745
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 32%(raw) 27%(depth)  54%(sat)  94%(pawn)
+              hashing-> 0%(exact)  15%(lower)  0%(upper)
+Black(8): Nf6
+White(9): f3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.06  -0.95   9. Bc4 O-O 10. O-O b5 11. Bd3 d5 12.
+                                    Qf3
+                8     0.15  -1.21   9. Bc4 Nxe4 10. b4 Nxb4 11. axb4 Qxa1
+                                    12. Nxe4 O-O
+                8->   0.18  -1.21   9. Bc4 Nxe4 10. b4 Nxb4 11. axb4 Qxa1
+                                    12. Nxe4 O-O
+                9     0.33  -0.97   9. Bc4 O-O 10. O-O d6 11. f4 Qd8 12.
+                                    c3 d5 13. fxe5 Nxe4
+                9->   0.37  -0.97   9. Bc4 O-O 10. O-O d6 11. f4 Qd8 12.
+                                    c3 d5 13. fxe5 Nxe4
+               10     0.65  -1.09   9. Bc4 O-O 10. O-O d6 11. h3 b5 12.
+                                    Bd3 b4 13. Qf3 Be6
+               10->   0.79  -1.09   9. Bc4 O-O 10. O-O d6 11. h3 b5 12.
+                                    Bd3 b4 13. Qf3 Be6
+              time=1.00  cpu=92%  mat=-1  n=2216525  fh=89%  nps=2216k
+              ext-> chk=26040 cap=6761 pp=1518 1rep=1118 mate=0
+              predicted=0  nodes=2216525  evals=664353
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 27%(raw) 23%(depth)  87%(sat)  94%(pawn)
+              hashing-> 0%(exact)  15%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.08  -1.42   9. f3 d5 10. Bd3 O-O 11. O-O Qc5 12.
+                                    Ra2 Be6
+                8->   0.08  -1.42   9. f3 d5 10. Bd3 O-O 11. O-O Qc5 12.
+                                    Ra2 Be6
+                9     0.12  -1.54   9. f3 d5 10. Bd3 dxe4 11. Bxe4 Nxe4
+                                    12. fxe4 Qc5 13. b4 Qd6
+                9->   0.12  -1.54   9. f3 d5 10. Bd3 dxe4 11. Bxe4 Nxe4
+                                    12. fxe4 Qc5 13. b4 Qd6
+               10     0.39  -1.48   9. f3 d5 10. Be2 dxe4 11. fxe4 Qb6
+                                    12. Bf3 Qc5 13. b4 Qd6
+               10->   0.39  -1.48   9. f3 d5 10. Be2 dxe4 11. fxe4 Qb6
+                                    12. Bf3 Qc5 13. b4 Qd6
+              time=0.39  cpu=94%  mat=-1  n=1007864  fh=90%  nps=2584k
+              ext-> chk=9087 cap=2774 pp=1444 1rep=123 mate=1
+              predicted=0  nodes=1007864  evals=293990
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 31%(raw) 26%(depth)  57%(sat)  95%(pawn)
+              hashing-> 0%(exact)  17%(lower)  1%(upper)
+Black(9): d5
+White(10): Bd3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.06  -1.54   10. Bd3 dxe4 11. Bxe4 Nxe4 12. fxe4
+                                    Qc5 13. b4 Qd6
+                8     0.11  -1.69   10. Bd3 dxe4 11. fxe4 Bg4 12. Be2 Bxe2
+                                    13. Qxe2 Qc5 14. Qd1
+                8     0.26  -1.48   10. Be2 dxe4 11. fxe4 Qb6 12. Bf3 Qc5
+                                    13. b4 Qd6
+                8->   0.29  -1.48   10. Be2 dxe4 11. fxe4 Qb6 12. Bf3 Qc5
+                                    13. b4 Qd6
+                9     0.45  -1.39   10. Be2 O-O 11. O-O Be6 12. Ra2 Qc5
+                                    13. b4 Qd6 14. Rb2
+                9->   0.51  -1.39   10. Be2 O-O 11. O-O Be6 12. Ra2 Qc5
+                                    13. b4 Qd6 14. Rb2
+               10     0.69  -1.66   10. Be2 dxe4 11. fxe4 Be6 12. O-O O-O-O
+                                    13. Bc4 Qc7 14. Ra2 Kb8
+               10->   0.87  -1.66   10. Be2 dxe4 11. fxe4 Be6 12. O-O O-O-O
+                                    13. Bc4 Qc7 14. Ra2 Kb8
+              time=1.00  cpu=86%  mat=-1  n=2401370  fh=90%  nps=2401k
+              ext-> chk=21700 cap=9524 pp=4925 1rep=502 mate=0
+              predicted=0  nodes=2401370  evals=697412
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 28%(raw) 24%(depth)  90%(sat)  95%(pawn)
+              hashing-> 0%(exact)  18%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.06  -1.69   10. Bd3 dxe4 11. fxe4 Bg4 12. Be2 Bxe2
+                                    13. Qxe2 Qc5 14. Qd1
+                8->   0.06  -1.69   10. Bd3 dxe4 11. fxe4 Bg4 12. Be2 Bxe2
+                                    13. Qxe2 Qc5 14. Qd1
+                9     0.15  -1.70   10. Bd3 dxe4 11. Bxe4 Nxe4 12. fxe4
+                                    f5 13. exf5 O-O 14. f6 Rxf6
+                9->   0.15  -1.70   10. Bd3 dxe4 11. Bxe4 Nxe4 12. fxe4
+                                    f5 13. exf5 O-O 14. f6 Rxf6
+               10     0.29  -1.66   10. Bd3 dxe4 11. fxe4 Bg4 12. Be2 Bxe2
+                                    13. Qxe2 Qc5 14. Ra2 O-O-O 15. O-O
+               10->   0.29  -1.66   10. Bd3 dxe4 11. fxe4 Bg4 12. Be2 Bxe2
+                                    13. Qxe2 Qc5 14. Ra2 O-O-O 15. O-O
+              time=0.29  cpu=79%  mat=-1  n=708133  fh=92%  nps=2441k
+              ext-> chk=6960 cap=2437 pp=459 1rep=44 mate=0
+              predicted=0  nodes=708133  evals=186875
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 37%(raw) 29%(depth)  45%(sat)  96%(pawn)
+              hashing-> 0%(exact)  19%(lower)  1%(upper)
+Black(10): dxe4
+White(11): fxe4
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.08  -2.03   11. fxe4 Bg4 12. Qc1 O-O-O 13. O-O
+                                    Qc5 14. Ra2 Kb8 <HT>
+                8     0.13  -1.74   11. Bxe4 Nxe4 12. fxe4 f5 13. exf5
+                                    O-O 14. f6 Rxf6
+                8->   0.15  -1.74   11. Bxe4 Nxe4 12. fxe4 f5 13. exf5
+                                    O-O 14. f6 Rxf6
+                9     0.19  -1.84   11. Bxe4 Nxe4 12. fxe4 f5 13. Qe2 Qc5
+                                    14. Qh5+ Kd8 15. Qg5+ Qe7 16. Qxe7+
+                                    Nxe7 17. c3 fxe4 18. Nxe4
+                9->   0.27  -1.84   11. Bxe4 Nxe4 12. fxe4 f5 13. Qe2 Qc5
+                                    14. Qh5+ Kd8 15. Qg5+ Qe7 16. Qxe7+
+                                    Nxe7 17. c3 fxe4 18. Nxe4
+               10     0.40  -1.76   11. Bxe4 Nxe4 12. fxe4 f5 13. b4 Qa4
+                                    14. O-O fxe4 15. Nxe4 Kd8 16. Rf7
+               10->   0.49  -1.76   11. Bxe4 Nxe4 12. fxe4 f5 13. b4 Qa4
+                                    14. O-O fxe4 15. Nxe4 Kd8 16. Rf7
+               11     0.69  -1.93   11. Bxe4 Nxe4 12. fxe4 f5 13. b4 Qa6
+                                    14. Nb3 O-O 15. N1d2 Qb5 16. h4
+              time=1.00  cpu=91%  mat=-2  n=2469593  fh=90%  nps=2469k
+              ext-> chk=41801 cap=9359 pp=3209 1rep=1093 mate=0
+              predicted=0  nodes=2469593  evals=659411
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 28%(raw) 23%(depth)  91%(sat)  96%(pawn)
+              hashing-> 0%(exact)  16%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.05  -2.03   11. fxe4 Bg4 12. Qc1 O-O-O 13. O-O
+                                    Qc5 14. Ra2 Kb8
+                8->   0.05  -2.03   11. fxe4 Bg4 12. Qc1 O-O-O 13. O-O
+                                    Qc5 14. Ra2 Kb8
+                9     0.16  -2.11   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxe5
+                9->   0.16  -2.11   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxe5
+               10     0.28  -2.11   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxe5
+               10->   0.28  -2.11   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxe5
+               11     0.67  -2.08   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxd4
+                                    exd4 17. Kxf1
+               11->   0.67  -2.08   11. fxe4 Ng4 12. O-O Ne3 13. Nc4 Nxd1
+                                    14. Nxa5 Ne3 15. Nxc6 Nxf1 16. Nxd4
+                                    exd4 17. Kxf1
+              time=0.69  cpu=85%  mat=-2  n=1898274  fh=93%  nps=2751k
+              ext-> chk=26839 cap=4548 pp=1421 1rep=701 mate=2
+              predicted=0  nodes=1898274  evals=422618
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 32%(raw) 28%(depth)  87%(sat)  98%(pawn)
+              hashing-> 0%(exact)  23%(lower)  1%(upper)
+Black(11): Bg4
+White(12): Be2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.04  -1.66   12. Be2 Bxe2 13. Qxe2 Qc5 14. Ra2 O-O-O
+                                    15. O-O
+                7->   0.06  -1.66   12. Be2 Bxe2 13. Qxe2 Qc5 14. Ra2 O-O-O
+                                    15. O-O
+                8     0.11  -1.75   12. Be2 Bxe2 13. Qxe2 Qc5 14. Ra2 O-O-O
+                                    15. O-O Kb8
+                8->   0.12  -1.75   12. Be2 Bxe2 13. Qxe2 Qc5 14. Ra2 O-O-O
+                                    15. O-O Kb8
+                9     0.23  -1.56   12. Be2 h5 13. O-O O-O-O 14. Ra2 Qc7
+                                    15. Rb2 Bxe2 16. Qxe2
+                9->   0.25  -1.56   12. Be2 h5 13. O-O O-O-O 14. Ra2 Qc7
+                                    15. Rb2 Bxe2 16. Qxe2
+               10     0.53  -1.92   12. Be2 h5 13. Ra2 Nb4 14. Rb2 d3 15.
+                                    axb4 dxe2 16. Qxe2 Qxb4
+              time=1.00  cpu=94%  mat=-1  n=2815695  fh=91%  nps=2815k
+              ext-> chk=25937 cap=8161 pp=3065 1rep=658 mate=27
+              predicted=0  nodes=2815695  evals=696280
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 34%(raw) 31%(depth)  92%(sat)  98%(pawn)
+              hashing-> 0%(exact)  19%(lower)  0%(upper)
+Black(12): h5
+White(13): O-O
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.11     --   13. O-O
+                8     0.12  -2.09   13. O-O Qc5 14. b4 Bxe2 15. bxc5 Bxd1
+                                    16. Rxd1 O-O
+                8     0.28  -1.92   13. Ra2 Nb4 14. Rb2 d3 15. axb4 dxe2
+                                    16. Qxe2 Qxb4
+                8->   0.33  -1.92   13. Ra2 Nb4 14. Rb2 d3 15. axb4 dxe2
+                                    16. Qxe2 Qxb4
+                9     0.48  -2.01   13. Ra2 Nxe4 14. Bxg4 hxg4 15. Qxg4
+                                    Nxd2 16. Nxd2 g6 17. a4 Qc5
+                9     0.58  -1.89   13. O-O Qc5 14. b4 Bxe2 15. bxc5 Bxd1
+                                    16. Rxd1 O-O 17. Ra2
+                9->   0.64  -1.89   13. O-O Qc5 14. b4 Bxe2 15. bxc5 Bxd1
+                                    16. Rxd1 O-O 17. Ra2
+               10     0.81  -2.05   13. O-O Qc5 14. b4 Bxe2 15. bxc5 Bxd1
+                                    16. Rxd1 Nd7 17. Nb3 O-O
+              time=1.00  cpu=87%  mat=-1  n=2613589  fh=91%  nps=2613k
+              ext-> chk=34665 cap=10524 pp=3730 1rep=1029 mate=27
+              predicted=0  nodes=2613589  evals=601539
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 25%(depth)  91%(sat)  98%(pawn)
+              hashing-> 0%(exact)  16%(lower)  0%(upper)
+Black(13): O-O-O
+White(14): Nc4
+
+              Searching all legal moves.----------------------------------
+middle-game phase
+              clearing hash tables
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.07  -1.78   14. Ra2 Kb8 15. Rb2 Qc5 16. b4 Bxe2
+                                    17. bxc5 Bxd1 18. Rxd1
+                7->   0.11  -1.78   14. Ra2 Kb8 15. Rb2 Qc5 16. b4 Bxe2
+                                    17. bxc5 Bxd1 18. Rxd1
+                8     0.18  -1.81   14. Ra2 Kb8 15. Nc4 Qc5 16. Qd3 Bxe2
+                                    17. Qxe2 d3+ 18. Qf2 Qxf2+ 19. Rxf2
+                                    Nxe4 20. Rxf7
+                8->   0.24  -1.81   14. Ra2 Kb8 15. Nc4 Qc5 16. Qd3 Bxe2
+                                    17. Qxe2 d3+ 18. Qf2 Qxf2+ 19. Rxf2
+                                    Nxe4 20. Rxf7
+                9     0.43  -1.78   14. Ra2 Kb8 15. Bf3 Qc5 16. b4 Qe7
+                                    17. Be2 Qe6 18. Rb2 Bxe2 19. Qxe2
+                9->   0.52  -1.78   14. Ra2 Kb8 15. Bf3 Qc5 16. b4 Qe7
+                                    17. Be2 Qe6 18. Rb2 Bxe2 19. Qxe2
+              time=1.00  cpu=90%  mat=-1  n=2609736  fh=87%  nps=2609k
+              ext-> chk=21641 cap=13402 pp=3502 1rep=618 mate=0
+              predicted=0  nodes=2609736  evals=823059
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 26%(raw) 21%(depth)  88%(sat)  98%(pawn)
+              hashing-> 0%(exact)  13%(lower)  1%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.07  -1.86   14. Nc4 Qc5 15. Rf2 Rhe8 16. Nbd2 Kb8
+                                    17. Bf3
+                7->   0.07  -1.86   14. Nc4 Qc5 15. Rf2 Rhe8 16. Nbd2 Kb8
+                                    17. Bf3
+                8     0.13  -2.06   14. Nc4 Qc5 15. Rf2 Bxe2 16. Qxe2 Ng4
+                                    17. b4 Qe7
+                8->   0.13  -2.06   14. Nc4 Qc5 15. Rf2 Bxe2 16. Qxe2 Ng4
+                                    17. b4 Qe7
+                9     0.27  -1.91   14. Nc4 Qc5 15. Rf2 Bxe2 16. Qxe2 d3
+                                    17. cxd3 Ng4 18. d4 Nxd4
+                9->   0.27  -1.91   14. Nc4 Qc5 15. Rf2 Bxe2 16. Qxe2 d3
+                                    17. cxd3 Ng4 18. d4 Nxd4
+              time=0.28  cpu=64%  mat=-1  n=631934  fh=89%  nps=2256k
+              ext-> chk=9228 cap=3980 pp=701 1rep=160 mate=0
+              predicted=0  nodes=631934  evals=199783
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 27%(raw) 20%(depth)  42%(sat)  97%(pawn)
+              hashing-> 0%(exact)  16%(lower)  0%(upper)
+Black(14): Qc7
+White(15): h3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.08  -1.66   15. Nbd2 Rh6 16. b4 Rg6 17. b5 Ne7
+                                    18. Rc1
+                7->   0.11  -1.66   15. Nbd2 Rh6 16. b4 Rg6 17. b5 Ne7
+                                    18. Rc1
+                8     0.16  -1.90   15. Nbd2 Rh6 16. b4 Rg6 17. b5 Ne7
+                                    18. Rc1 Kb8
+                8     0.61  -1.86   15. Re1 Kb8 16. Qd3 Nd7 17. b4 Rh6
+                                    18. Nbd2 Rg6
+                8->   0.65  -1.86   15. Re1 Kb8 16. Qd3 Nd7 17. b4 Rh6
+                                    18. Nbd2 Rg6
+                9     0.74     --   15. Re1
+                9     0.79  -2.49   15. Re1 Bxe2 16. Rxe2 h4 17. h3 Kb8
+                                    18. Nbd2 Rhe8 19. Rc1
+              time=1.00  cpu=89%  mat=-1  n=2698248  fh=92%  nps=2698k
+              ext-> chk=49233 cap=15435 pp=2336 1rep=403 mate=0
+              predicted=0  nodes=2698248  evals=866417
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 26%(raw) 24%(depth)  92%(sat)  98%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.08  -2.49   15. h3 Be6 16. Nbd2 Kb8 17. Rf3 Qd7
+                                    18. Rg3 g6
+                8->   0.08  -2.49   15. h3 Be6 16. Nbd2 Kb8 17. Rf3 Qd7
+                                    18. Rg3 g6
+                9     0.21  -2.45   15. h3 Be6 16. Nbd2 Kb8 17. Rf3 Qd7
+                                    18. Rg3 g6 19. Rc1
+                9->   0.21  -2.45   15. h3 Be6 16. Nbd2 Kb8 17. Rf3 Qd7
+                                    18. Rg3 g6 19. Rc1
+              time=0.21  cpu=76%  mat=-1  n=459038  fh=91%  nps=2185k
+              ext-> chk=5143 cap=1332 pp=338 1rep=117 mate=0
+              predicted=0  nodes=459038  evals=114809
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 34%(raw) 24%(depth)  31%(sat)  96%(pawn)
+              hashing-> 0%(exact)  23%(lower)  0%(upper)
+Black(15): Kb8
+White(16): hxg4
+
+              Searching all legal moves.----------------------------------
+              trojan check enabled
+              clearing hash tables
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.07  -2.54   16. Nbd2 Rh6 17. b4 Rg6 18. b5 Bxe2
+                                    19. Qxe2
+                7->   0.16  -2.54   16. Nbd2 Rh6 17. b4 Rg6 18. b5 Bxe2
+                                    19. Qxe2
+                8     0.27  -2.62   16. Nbd2 Ne7 17. Nf3 Ng6 18. Bd3 Rhe8
+                                    19. Qd2 Nf4 20. Nfxe5 Nxd3 21. Nxg4
+                                    Nxe4 22. Qxd3 hxg4
+                8->   0.39  -2.62   16. Nbd2 Ne7 17. Nf3 Ng6 18. Bd3 Rhe8
+                                    19. Qd2 Nf4 20. Nfxe5 Nxd3 21. Nxg4
+                                    Nxe4 22. Qxd3 hxg4
+                9     0.57  -2.61   16. Nbd2 Ne7 17. Nf3 Nxe4 18. Ncxe5
+                                    Ng6 19. Nxg6 fxg6 20. Bb5
+                9->   0.72  -2.61   16. Nbd2 Ne7 17. Nf3 Nxe4 18. Ncxe5
+                                    Ng6 19. Nxg6 fxg6 20. Bb5
+              time=1.00  cpu=87%  mat=-1  n=2431648  fh=84%  nps=2431k
+              ext-> chk=8727 cap=9740 pp=1505 1rep=623 mate=0
+              predicted=0  nodes=2431648  evals=879885
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 24%(raw) 19%(depth)  77%(sat)  97%(pawn)
+              hashing-> 0%(exact)  12%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.07  -6.66   16. hxg4 hxg4 17. Nbd2 Rh4 18. g3 Rh3
+                                    19. Kg2 Nh5
+                8->   0.07  -6.66   16. hxg4 hxg4 17. Nbd2 Rh4 18. g3 Rh3
+                                    19. Kg2 Nh5
+                9     0.13  -6.55   16. hxg4 hxg4 17. Nbd2 Rh4 18. Rc1
+                                    g3 19. Rf3 b5 20. Nb2
+                9->   0.13  -6.55   16. hxg4 hxg4 17. Nbd2 Rh4 18. Rc1
+                                    g3 19. Rf3 b5 20. Nb2
+              time=0.13  cpu=53%  mat=-1  n=255565  fh=91%  nps=1965k
+              ext-> chk=2316 cap=894 pp=135 1rep=384 mate=0
+              predicted=0  nodes=255565  evals=84156
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 30%(raw) 17%(depth)  19%(sat)  97%(pawn)
+              hashing-> 0%(exact)  11%(lower)  0%(upper)
+Black(16): hxg4
+White(17): b4
+
+              Searching all legal moves.----------------------------------
+              clearing hash tables
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.07  -0.55   17. Nbd2 Rh4 18. Rc1 g3 19. Rf3 b5
+                                    20. Nb2
+                7->   0.11  -0.55   17. Nbd2 Rh4 18. Rc1 g3 19. Rf3 b5
+                                    20. Nb2
+                8     0.22     --   17. Nbd2
+                8     0.24  -1.27   17. Nbd2 b5 18. Nb2 d3 19. Nxd3 Qb6+
+                                    20. Nf2 g3 21. Bxb5 gxf2+
+                8     0.32  -0.83   17. Qd3 Rh4 18. Nbd2 Rdh8 19. c3 Rh1+
+                                    20. Kf2 R1h2 21. cxd4 Nxd4
+                8->   0.41  -0.83   17. Qd3 Rh4 18. Nbd2 Rdh8 19. c3 Rh1+
+                                    20. Kf2 R1h2 21. cxd4 Nxd4
+                9     0.77  -0.52   17. Qd3 Ne7 18. Ra2 Ng6 19. Rf5 Nf4
+                                    20. Qd1 Nxe4 21. Rxe5
+                9->   0.85  -0.52   17. Qd3 Ne7 18. Ra2 Ng6 19. Rf5 Nf4
+                                    20. Qd1 Nxe4 21. Rxe5
+              time=1.00  cpu=92%  mat=1  n=2638558  fh=91%  nps=2638k
+              ext-> chk=32263 cap=6232 pp=1981 1rep=3822 mate=0
+              predicted=0  nodes=2638558  evals=928805
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 25%(raw) 21%(depth)  91%(sat)  98%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.09  -1.55   17. b4 Nxe4 18. b5 Ng3 19. bxc6 Rh1+
+                                    20. Kf2 Nxf1 21. Bxf1
+                8->   0.09  -1.55   17. b4 Nxe4 18. b5 Ng3 19. bxc6 Rh1+
+                                    20. Kf2 Nxf1 21. Bxf1
+                9     0.27  -1.62   17. b4 Nxe4 18. Bxg4 Ng3 19. Re1 Rh1+
+                                    20. Kf2 Ne4+ 21. Kf3 Ng5+ 22. Kf2 Rh2
+                9->   0.27  -1.62   17. b4 Nxe4 18. Bxg4 Ng3 19. Re1 Rh1+
+                                    20. Kf2 Ne4+ 21. Kf3 Ng5+ 22. Kf2 Rh2
+              time=0.27  cpu=81%  mat=1  n=602515  fh=91%  nps=2231k
+              ext-> chk=9146 cap=1283 pp=386 1rep=1996 mate=1
+              predicted=0  nodes=602515  evals=168915
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 19%(depth)  41%(sat)  97%(pawn)
+              hashing-> 0%(exact)  11%(lower)  0%(upper)
+Black(17): Rh4
+White(18): Rf5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.06  -0.79   18. b5 Ne7 19. Qd3 Qc5 20. Nbd2 Rdh8
+                                    21. Rab1
+                7->   0.14  -0.79   18. b5 Ne7 19. Qd3 Qc5 20. Nbd2 Rdh8
+                                    21. Rab1
+                8     0.28     --   18. b5
+                8     0.39  -2.51   18. b5 Rdh8 19. Kf2 Nxe4+ 20. Ke1 Na5
+                                    21. Nxa5 Qxa5+ 22. Nd2 Qc3
+                8     0.51  -1.05   18. Nbd2 Rdh8 19. Kf2 g3+ 20. Kxg3
+                                    Nxe4+ 21. Nxe4 Rxe4 22. b5 Nd8
+                8->   0.67  -1.05   18. Nbd2 Rdh8 19. Kf2 g3+ 20. Kxg3
+                                    Nxe4+ 21. Nxe4 Rxe4 22. b5 Nd8
+                9     0.81  -0.79   18. Nbd2 Rdh8 19. Kf2 Ne7 20. Rc1 Rh2
+                                    21. c3 b5 22. Na5
+              time=1.00  cpu=95%  mat=1  n=2371862  fh=89%  nps=2371k
+              ext-> chk=46732 cap=7646 pp=2688 1rep=6543 mate=2575
+              predicted=0  nodes=2371862  evals=1004469
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 18%(depth)  86%(sat)  97%(pawn)
+              hashing-> 0%(exact)  8%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.04  -4.12   18. Rf5 Rdh8 19. Rf1 Rh1+ 20. Kf2 Nxe4+
+                                    21. Ke1 Ng3 22. Kd2 Nxf1+ 23. Bxf1
+                7->   0.04  -4.12   18. Rf5 Rdh8 19. Rf1 Rh1+ 20. Kf2 Nxe4+
+                                    21. Ke1 Ng3 22. Kd2 Nxf1+ 23. Bxf1
+                8     0.09  -4.41   18. Rf5 Rdh8 19. Kf2 Nxe4+ 20. Ke1
+                                    Rh1+ 21. Rf1 Ng3 22. Nbd2 Nxf1 23.
+                                    Nxf1 <HT>
+                8->   0.09  -4.41   18. Rf5 Rdh8 19. Kf2 Nxe4+ 20. Ke1
+                                    Rh1+ 21. Rf1 Ng3 22. Nbd2 Nxf1 23.
+                                    Nxf1 <HT>
+                9     0.15  -4.41   18. Rf5 Rdh8 19. Kf2 Nxe4+ 20. Ke1
+                                    Rh1+ 21. Rf1 Ng3 22. Nbd2 Nxf1 23.
+                                    Nxf1 <HT>
+                9->   0.17  -4.41   18. Rf5 Rdh8 19. Kf2 Nxe4+ 20. Ke1
+                                    Rh1+ 21. Rf1 Ng3 22. Nbd2 Nxf1 23.
+                                    Nxf1 <HT>
+              time=0.17  cpu=64%  mat=1  n=311988  fh=91%  nps=1835k
+              ext-> chk=6656 cap=761 pp=160 1rep=981 mate=58
+              predicted=0  nodes=311988  evals=85737
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 32%(raw) 25%(depth)  20%(sat)  97%(pawn)
+              hashing-> 0%(exact)  11%(lower)  0%(upper)
+Black(18): g3
+White(19): Qe1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6     0.07  -5.38   19. a4 Rdh8 20. Bh5 Nxh5 21. b5 g6
+                6     0.07  -3.15   19. Bh5 Rh8 20. b5 Ne7 21. Rxf6 gxf6
+                                    22. Bxf7 Rxe4
+                6->   0.17  -3.15   19. Bh5 Rh8 20. b5 Ne7 21. Rxf6 gxf6
+                                    22. Bxf7 Rxe4
+                7     0.17     --   19. Bh5
+                7     0.19  -3.59   19. Bh5 Rh8 20. b5 Nd8 21. Nxe5 R8xh5
+                                    22. Rxh5 Rxh5
+                7->   0.30  -3.59   19. Bh5 Rh8 20. b5 Nd8 21. Nxe5 R8xh5
+                                    22. Rxh5 Rxh5
+                8     0.35  -3.90   19. Bh5 Rh8 20. b5 Ne7 21. Rxe5 Qxc4
+                                    22. Nd2 Qc7
+                8->   0.49  -3.90   19. Bh5 Rh8 20. b5 Ne7 21. Rxe5 Qxc4
+                                    22. Nd2 Qc7
+                9     0.60  -3.89   19. Bh5 Rh8 20. b5 Ne7 21. Rxe5 Qxc4
+                                    22. Rxe7 Nxh5 23. Nd2
+                9->   0.85  -3.89   19. Bh5 Rh8 20. b5 Ne7 21. Rxe5 Qxc4
+                                    22. Rxe7 Nxh5 23. Nd2
+               10     0.96     --   19. Bh5
+              time=1.00  cpu=90%  mat=1  n=2252852  fh=86%  nps=2252k
+              ext-> chk=34324 cap=8920 pp=3831 1rep=7251 mate=3399
+              predicted=0  nodes=2252852  evals=873502
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 26%(raw) 18%(depth)  82%(sat)  98%(pawn)
+              hashing-> 0%(exact)  14%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                9     0.07     ++   19. Qe1!!
+                9->   0.08  -6.07   19. Qe1 Rdh8 20. Bh5 Nxh5 21. Na5 Nxa5
+                                    22. bxa5 Rh2
+              time=0.08  cpu=62%  mat=1  n=170528  fh=86%  nps=10k
+              ext-> chk=2805 cap=327 pp=348 1rep=987 mate=4
+              predicted=0  nodes=170528  evals=50788
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 40%(raw) 35%(depth)  10%(sat)  97%(pawn)
+              hashing-> 0%(exact)  19%(lower)  0%(upper)
+Black(19): Nxe4
+White(20): Bf3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.06  -2.17   20. Rh5 Rxh5 21. Bxh5 Nf2 22. Bf3 Re8
+                                    23. Be4
+                7->   0.11  -2.17   20. Rh5 Rxh5 21. Bxh5 Nf2 22. Bf3 Re8
+                                    23. Be4
+                8     0.14     --   20. Rh5
+                8     0.17  -2.66   20. Rh5 Rh8 21. Rxh8+ Rxh8 22. Bh5
+                                    Nf2 23. Qe2 e4 24. Nbd2
+                8->   0.35  -2.66   20. Rh5 Rh8 21. Rxh8+ Rxh8 22. Bh5
+                                    Nf2 23. Qe2 e4 24. Nbd2
+                9     0.39     --   20. Rh5
+                9     0.44  -3.22   20. Rh5 Rh8 21. Rxh8+ Rxh8 22. Bg4
+                                    Nf2 23. Bh3 e4 24. b5 Ne5
+                9->   0.96  -3.22   20. Rh5 Rh8 21. Rxh8+ Rxh8 22. Bg4
+                                    Nf2 23. Bh3 e4 24. b5 Ne5
+              time=1.00  cpu=90%  mat=0  n=2567689  fh=89%  nps=2567k
+              ext-> chk=38408 cap=9825 pp=6983 1rep=6234 mate=5117
+              predicted=0  nodes=2567689  evals=931709
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 18%(depth)  88%(sat)  98%(pawn)
+              hashing-> 0%(exact)  13%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.10  -7.64   20. Bf3 Rdh8 21. Rh5 R8xh5 22. Bxh5
+                                    Nf2 23. Kf1 Rh1+ 24. Ke2 Rxh5
+                8->   0.10  -7.64   20. Bf3 Rdh8 21. Rh5 R8xh5 22. Bxh5
+                                    Nf2 23. Kf1 Rh1+ 24. Ke2 Rxh5
+                9     0.46  -7.81   20. Bf3 Nf2 21. Rh5 Rh8 22. Rxh4 Rxh4
+                                    23. Qxf2 gxf2+ 24. Kxf2 Nxb4 25. axb4
+                                    Qxc4
+                9->   0.46  -7.81   20. Bf3 Nf2 21. Rh5 Rh8 22. Rxh4 Rxh4
+                                    23. Qxf2 gxf2+ 24. Kxf2 Nxb4 25. axb4
+                                    Qxc4
+              time=0.46  cpu=93%  mat=0  n=979012  fh=88%  nps=2128k
+              ext-> chk=22776 cap=3853 pp=4251 1rep=3786 mate=1794
+              predicted=0  nodes=979012  evals=321127
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 25%(raw) 20%(depth)  58%(sat)  98%(pawn)
+              hashing-> 0%(exact)  10%(lower)  0%(upper)
+Black(20): Rdh8
+White(21): Kf1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                2     0.00 -Mat01   21. Bxe4 Rh1#
+                2     0.01  -8.08   21. Kf1 Rh1+ 22. Ke2 Rxe1+ 23. Kxe1
+                2     0.01  -2.54   21. Rh5 R4xh5 22. Bxh5
+                7->   0.09  -7.50   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Kf1
+                                    Rh1+ 24. Ke2 Rxe1+ 25. Kxe1 Nxb4 26.
+                                    axb4 Qxc4
+                8     0.09     --   21. Rh5
+                8     0.12  -8.05   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Kf1
+                                    Rh1+ 24. Ke2 d3+ 25. cxd3 Nd4+ 26.
+                                    Kd2 Nb3+ 27. Kc3 Rxe1 28. Kxb3 Nxd3
+                8->   0.20  -8.05   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Kf1
+                                    Rh1+ 24. Ke2 d3+ 25. cxd3 Nd4+ 26.
+                                    Kd2 Nb3+ 27. Kc3 Rxe1 28. Kxb3 Nxd3
+                9     0.23  -8.05   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Kf1
+                                    Rh1+ 24. Ke2 d3+ 25. cxd3 Nd4+ 26.
+                                    Kd2 Nb3+ 27. Kc3 Rxe1 28. Kxb3 Nxd3
+                9->   0.34  -8.05   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Kf1
+                                    Rh1+ 24. Ke2 d3+ 25. cxd3 Nd4+ 26.
+                                    Kd2 Nb3+ 27. Kc3 Rxe1 28. Kxb3 Nxd3
+               10     0.39     --   21. Rh5
+               10     0.48  -9.40   21. Rh5 R8xh5 22. Bxh5 Nf2 23. Qxf2
+                                    gxf2+ 24. Kxf2 Rxh5 25. Nbd2 Rh2 26.
+                                    Ne4
+              time=1.00  cpu=86%  mat=0  n=2452485  fh=91%  nps=2452k
+              ext-> chk=91035 cap=7468 pp=10436 1rep=8628 mate=1984
+              predicted=0  nodes=2452485  evals=658453
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 17%(raw) 12%(depth)  92%(sat)  98%(pawn)
+              hashing-> 0%(exact)  9%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.16 -14.24   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Kxd3 Qd7+
+                                    24. Nd6 Qxd6+ 25. Kc4 Qd4+ 26. Kb3
+                                    Rxe1 27. Bxe4 Qxa1 28. Bxc6 bxc6
+                7->   0.19 -14.24   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Kxd3 Qd7+
+                                    24. Nd6 Qxd6+ 25. Kc4 Qd4+ 26. Kb3
+                                    Rxe1 27. Bxe4 Qxa1 28. Bxc6 bxc6
+                8     0.21     --   21. Kf1
+                8     0.46 -18.22   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Ke3 Rxe1+
+                                    24. Be2 dxc2 25. Nbd2 Rxa1 26. Nb3
+                                    Re1
+                8->   0.47 -18.22   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Ke3 Rxe1+
+                                    24. Be2 dxc2 25. Nbd2 Rxa1 26. Nb3
+                                    Re1
+                9     0.57     --   21. Kf1
+                9     0.78 -19.06   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Ke3 Rxe1+
+                                    24. Be2 Qd7 25. Nd6 dxc2 26. Nc3 Rxa1
+                                    27. Kxe4 c1=Q 28. Nxf7 Rxa3 29. Nxh8
+                                    Rxc3
+                9->   0.80 -19.06   21. Kf1 Rh1+ 22. Ke2 d3+ 23. Ke3 Rxe1+
+                                    24. Be2 Qd7 25. Nd6 dxc2 26. Nc3 Rxa1
+                                    27. Kxe4 c1=Q 28. Nxf7 Rxa3 29. Nxh8
+                                    Rxc3
+               10     0.82     --   21. Kf1
+              time=3.00  cpu=92%  mat=0  n=8988509  fh=92%  nps=2996k
+              ext-> chk=635560 cap=21310 pp=34405 1rep=68380 mate=5693
+              predicted=0  nodes=8988509  evals=735588
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 8%(raw) 6%(depth)  99%(sat)  99%(pawn)
+              hashing-> 0%(exact)  5%(lower)  0%(upper)
+Black(21): Rh1+
+White(22): Ke2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                7     0.07 -14.52   22. Ke2 d3+ 23. Kxd3 Qd7+ 24. Nd6 Qxd6+
+                                    25. Kc4 Qe6+ 26. Kd3 Rd8+ 27. Kxe4
+                                    Rxe1+ 28. Be2 Rxe2+
+                7->   0.07 -14.52   22. Ke2 d3+ 23. Kxd3 Qd7+ 24. Nd6 Qxd6+
+                                    25. Kc4 Qe6+ 26. Kd3 Rd8+ 27. Kxe4
+                                    Rxe1+ 28. Be2 Rxe2+
+                8     0.07     --   22. Ke2
+                8     0.32 -18.22   22. Ke2 d3+ 23. Ke3 Rxe1+ 24. Be2 dxc2
+                                    25. Nbd2 Rxa1 26. Nb3 Re1
+                8->   0.32 -18.22   22. Ke2 d3+ 23. Ke3 Rxe1+ 24. Be2 dxc2
+                                    25. Nbd2 Rxa1 26. Nb3 Re1
+                9     0.39     --   22. Ke2
+                9     0.57 -19.28   22. Ke2 d3+ 23. Ke3 Rxe1+ 24. Be2 Qd7
+                                    25. Nd6 Nxd6 26. cxd3 Nxf5+ 27. Kd2
+                                    Rhh1
+                9->   0.57 -19.28   22. Ke2 d3+ 23. Ke3 Rxe1+ 24. Be2 Qd7
+                                    25. Nd6 Nxd6 26. cxd3 Nxf5+ 27. Kd2
+                                    Rhh1
+               10     0.58     --   22. Ke2
+              time=1.00  cpu=86%  mat=0  n=3200537  fh=95%  nps=3200k
+              ext-> chk=238534 cap=3098 pp=15202 1rep=20427 mate=94
+              predicted=0  nodes=3200537  evals=183872
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 16%(raw) 12%(depth)  98%(sat)  99%(pawn)
+              hashing-> 0%(exact)  9%(lower)  0%(upper)
+Black(22): Rxe1+
+White(23): Kxe1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                7->   0.07 -13.69   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Kxd3
+                                    Qd8+ 26. Nd6 Qxd6+ 27. Kc4 Qe6+ 28.
+                                    Kd3 Nf2+ 29. Kc3 Qxf5 30. Bxc6 bxc6
+                8     0.08     --   23. Kxe1
+                8     0.17 -14.19   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Ke3 dxc2
+                                    26. Nbd2 Rxa1 27. Nb3 c1=Q+ 28. Nxc1
+                                    Rxc1 29. Bxe4 Rxc4
+                8->   0.21 -14.19   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Ke3 dxc2
+                                    26. Nbd2 Rxa1 27. Nb3 c1=Q+ 28. Nxc1
+                                    Rxc1 29. Bxe4 Rxc4
+                9     0.25     --   23. Kxe1
+                9     0.39 -14.73   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Ke3 dxc2
+                                    26. Nbd2 Rxa1 27. Nb3 Re1+ 28. Be2
+                                    Nd4 29. Kxe4 Nxf5
+                9->   0.44 -14.73   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Ke3 dxc2
+                                    26. Nbd2 Rxa1 27. Nb3 Re1+ 28. Be2
+                                    Nd4 29. Kxe4 Nxf5
+               10     0.52     --   23. Kxe1
+               10     0.92 -15.24   23. Kxe1 Rh1+ 24. Ke2 d3+ 25. Ke3 dxc2
+                                    26. Nbd2 Rxa1 27. Nb3 Re1+ 28. Kd3
+                                    Qd7+ 29. Kxc2 Qxf5 30. Kb2
+              time=1.00  cpu=95%  mat=-9  n=2911800  fh=94%  nps=2911k
+              ext-> chk=184612 cap=3860 pp=8570 1rep=15036 mate=171
+              predicted=0  nodes=2911800  evals=510239
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 18%(raw) 14%(depth)  96%(sat)  99%(pawn)
+              hashing-> 0%(exact)  9%(lower)  1%(upper)
+Black(23): Nd6
+White(24): Nxd6
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.05  -5.75   24. Nxd6 Qxd6 25. Rxf7 Qg6 26. Bd5
+                                    Qxc2 27. Bxc6 Qxc6
+                8     0.08     --   24. Nxd6
+                8     0.11  -6.64   24. Nxd6 Qxd6 25. Rxf7 Rh1+ 26. Ke2
+                                    Nd8 27. Rxg7 Qa6+ 28. b5 Qxb5+ 29.
+                                    Kd2 Rxb1 30. Rxb1 Qxb1 31. Rxg3
+                8->   0.16  -6.64   24. Nxd6 Qxd6 25. Rxf7 Rh1+ 26. Ke2
+                                    Nd8 27. Rxg7 Qa6+ 28. b5 Qxb5+ 29.
+                                    Kd2 Rxb1 30. Rxb1 Qxb1 31. Rxg3
+                9     0.27     --   24. Nxd6
+                9     0.55  -7.27   24. Nxd6 Qxd6 25. Be2 Qg6 26. Bd3 Qe6
+                                    27. Kd2 Rh2 28. Be4
+                9->   0.61  -7.27   24. Nxd6 Qxd6 25. Be2 Qg6 26. Bd3 Qe6
+                                    27. Kd2 Rh2 28. Be4
+              time=1.00  cpu=88%  mat=-4  n=2742710  fh=91%  nps=2742k
+              ext-> chk=116380 cap=5798 pp=5291 1rep=9649 mate=163
+              predicted=0  nodes=2742710  evals=889478
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 25%(raw) 22%(depth)  93%(sat)  98%(pawn)
+              hashing-> 0%(exact)  8%(lower)  0%(upper)
+Black(24): Qxd6
+White(25): Ra2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6->   0.07  -6.64   25. Rxf7 Rh1+ 26. Ke2 Nd8 27. Rxg7
+                                    Qa6+ 28. b5 Qxb5+ 29. Kd2 Rxb1 30.
+                                    Rxb1 Qxb1 31. Rxg3
+                7     0.10  -6.77   25. Rxf7 Rh1+ 26. Ke2 d3+ 27. cxd3
+                                    Nd4+ 28. Ke3 Qh6+ 29. Ke4 Re1+ 30.
+                                    Be2 Qg6+ 31. Kxe5 Qxf7 32. Kxd4 Rxe2
+                7     0.13  -6.53   25. Rh5 Re8 26. Nd2 Ne7 27. Ne4 Qc7
+                                    28. Kd2
+                7->   0.16  -6.53   25. Rh5 Re8 26. Nd2 Ne7 27. Ne4 Qc7
+                                    28. Kd2
+                8     0.21     --   25. Rh5
+                8     0.21  -7.36   25. Rh5 Rxh5 26. Bxh5 Qh6 27. b5 Qc1+
+                                    28. Ke2 Qxc2+ 29. Nd2 d3+ 30. Ke3
+                8->   0.38  -7.36   25. Rh5 Rxh5 26. Bxh5 Qh6 27. b5 Qc1+
+                                    28. Ke2 Qxc2+ 29. Nd2 d3+ 30. Ke3
+                9     0.39     --   25. Rh5
+                9     0.39  -8.76   25. Rh5 Rxh5 26. Bxh5 Qh6 27. b5 Qxh5
+                                    28. bxc6 Qh1+ 29. Ke2 Qxg2+ 30. Kd3
+                                    Qxc6
+                9     0.64  -8.13   25. Be2 Qg6 26. Bd3 e4 27. Bxe4 Re8
+                                    28. Kd2 Rxe4 29. Rd5
+                9     0.96  -7.55   25. Nd2 Qg6 26. Be4 Ne7 27. Rf3 f5
+                                    28. Bxf5 Nxf5 29. Ne4
+              time=1.00  cpu=91%  mat=-4  n=2660615  fh=92%  nps=2660k
+              ext-> chk=101792 cap=5475 pp=5293 1rep=8114 mate=147
+              predicted=0  nodes=2660615  evals=851845
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 24%(raw) 22%(depth)  94%(sat)  98%(pawn)
+              hashing-> 0%(exact)  10%(lower)  0%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.13 -10.31   25. Ra2 Rh1+ 26. Kd2 Qh6+ 27. Kd3 b5
+                                    28. Ke4 Qe3+ 29. Kd5 Ne7+ 30. Kc5 Nxf5
+                8->   0.13 -10.31   25. Ra2 Rh1+ 26. Kd2 Qh6+ 27. Kd3 b5
+                                    28. Ke4 Qe3+ 29. Kd5 Ne7+ 30. Kc5 Nxf5
+                9     0.14     --   25. Ra2
+                9     0.42 -10.69   25. Ra2 Rh1+ 26. Ke2 Qe6 27. Nd2 Qxf5
+                                    28. Ne4 Qf4 29. Kd3 Rh2
+                9->   0.42 -10.69   25. Ra2 Rh1+ 26. Ke2 Qe6 27. Nd2 Qxf5
+                                    28. Ne4 Qf4 29. Kd3 Rh2
+              time=0.42  cpu=95%  mat=-4  n=1295710  fh=95%  nps=3085k
+              ext-> chk=84600 cap=1738 pp=2402 1rep=6090 mate=161
+              predicted=0  nodes=1295710  evals=194713
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 28%(raw) 23%(depth)  75%(sat)  98%(pawn)
+              hashing-> 0%(exact)  8%(lower)  0%(upper)
+Black(25): Qe6
+White(26): Rh5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                6     0.06 -10.30   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Qc4
+                6->   0.06 -10.30   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Qc4
+                7     0.08 -10.36   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Rh2 29. Rg1
+                7->   0.13 -10.36   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Rh2 29. Rg1
+                8     0.13     --   26. Bxc6
+                8     0.17 -10.79   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Rh2 29. Rg1 Qc4
+                8->   0.25 -10.79   26. Bxc6 bxc6 27. Rf1 Qxa2 28. Kd2
+                                    Rh2 29. Rg1 Qc4
+                9     0.30     --   26. Bxc6
+                9     0.55 -12.00   26. Bxc6 Qxf5 27. Bf3 Qf4 28. Bh5 Qf2+
+                                    29. Kd1 Rxh5 30. Kc1 Qxg2
+                9     0.73 -11.61   26. Rh5 Rxh5 27. Bxh5 Qxa2 28. Nd2
+                                    Qxa3 29. b5 Qe3+ 30. Be2 Nb4
+                9->   0.86 -11.61   26. Rh5 Rxh5 27. Bxh5 Qxa2 28. Nd2
+                                    Qxa3 29. b5 Qe3+ 30. Be2 Nb4
+               10     0.91 -11.61   26. Rh5 Rxh5 27. Bxh5 Qxa2 28. Nd2
+                                    Qxa3 29. b5 Qe3+ 30. Be2 Nb4 31. Kd1
+              time=1.00  cpu=89%  mat=-4  n=2961634  fh=94%  nps=2961k
+              ext-> chk=202949 cap=3766 pp=7681 1rep=17836 mate=279
+              predicted=0  nodes=2961634  evals=510916
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 23%(raw) 19%(depth)  96%(sat)  98%(pawn)
+              hashing-> 0%(exact)  10%(lower)  0%(upper)
+Black(26): Rxh5
+White(27): Bxh5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                9     0.05     --   27. Bxh5
+                9     0.08 -12.73   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    Qxb4+ 30. Nd2 g6 31. Bg4 Kc7 <HT>
+                9->   0.11 -12.73   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    Qxb4+ 30. Nd2 g6 31. Bg4 Kc7 <HT>
+               10     0.14 -12.77   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    d3 30. Kd2 Nxb4 31. Nc1 g6
+               10->   0.19 -12.77   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    d3 30. Kd2 Nxb4 31. Nc1 g6
+               11     0.27 -13.05   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Kd1
+                                    d3 30. Nf3 Qa4 31. Ne1 Nxb4 32. Kc1
+               11->   0.36 -13.05   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Kd1
+                                    d3 30. Nf3 Qa4 31. Ne1 Nxb4 32. Kc1
+               12     0.61 -13.22   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    Qxb4+ 30. Nd2 e4 31. Kd1 e3 32. Nb3
+                                    Qc4 33. Be2
+               12->   0.81 -13.22   27. Bxh5 Qxa2 28. Nd2 Qxa3 29. Nb3
+                                    Qxb4+ 30. Nd2 e4 31. Kd1 e3 32. Nb3
+                                    Qc4 33. Be2
+               13     0.89     --   27. Bxh5
+              time=1.00  cpu=91%  mat=-9  n=2945771  fh=91%  nps=2945k
+              ext-> chk=191951 cap=2891 pp=8896 1rep=15322 mate=539
+              predicted=0  nodes=2945771  evals=574577
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 24%(raw) 19%(depth)  96%(sat)  96%(pawn)
+              hashing-> 0%(exact)  12%(lower)  1%(upper)
+Black(27): Qxa2
+White(28): Nd2
+
+              Searching all legal moves.----------------------------------
+end-game phase
+              clearing hash tables
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.08 -12.77   28. Nd2 Qxa3 29. Nb3 d3 30. Kd2 Nxb4
+                                    31. Nc1 g6
+                8->   0.08 -12.77   28. Nd2 Qxa3 29. Nb3 d3 30. Kd2 Nxb4
+                                    31. Nc1 g6
+                9     0.17 -13.05   28. Nd2 Qxa3 29. Kd1 d3 30. Nf3 Qa4
+                                    31. Ne1 Nxb4 32. Kc1
+                9->   0.17 -13.05   28. Nd2 Qxa3 29. Kd1 d3 30. Nf3 Qa4
+                                    31. Ne1 Nxb4 32. Kc1
+               10     0.39 -13.22   28. Nd2 Qxa3 29. Nb3 Qxb4+ 30. Nd2
+                                    e4 31. Kd1 e3 32. Nb3 Qc4 33. Be2
+               10->   0.41 -13.22   28. Nd2 Qxa3 29. Nb3 Qxb4+ 30. Nd2
+                                    e4 31. Kd1 e3 32. Nb3 Qc4 33. Be2
+               11     0.45     --   28. Nd2
+              time=1.00  cpu=84%  mat=-9  n=2850118  fh=91%  nps=2850k
+              ext-> chk=218629 cap=2622 pp=7843 1rep=16565 mate=330
+              predicted=0  nodes=2850118  evals=576278
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 22%(raw) 18%(depth)  97%(sat)  97%(pawn)
+              hashing-> 0%(exact)  10%(lower)  1%(upper)
+Black(28): Qa1+
+White(29): Ke2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.09 -12.68   29. Ke2 Qxa3 30. Nc4 Qc1 31. Bxf7 Qxc2+
+                                    32. Nd2 d3+ 33. Ke3 Nxb4
+                8->   0.09 -12.68   29. Ke2 Qxa3 30. Nc4 Qc1 31. Bxf7 Qxc2+
+                                    32. Nd2 d3+ 33. Ke3 Nxb4
+                9     0.27 -12.91   29. Ke2 Qxa3 30. Nb3 Nxb4 31. Bxf7
+                                    d3+ 32. Kf3 dxc2 33. Ke4 Qxb3 34. Bxb3
+                                    c1=Q 35. Kxe5
+                9->   0.28 -12.91   29. Ke2 Qxa3 30. Nb3 Nxb4 31. Bxf7
+                                    d3+ 32. Kf3 dxc2 33. Ke4 Qxb3 34. Bxb3
+                                    c1=Q 35. Kxe5
+               10     0.34     --   29. Ke2
+               10     0.80 -13.54   29. Ke2 Qxa3 30. Nf3 Nxb4 31. Ne1 g6
+                                    32. Bg4 Qc1 33. Bd7 Nxc2 34. Nxc2 Qxc2+
+               10->   0.83 -13.54   29. Ke2 Qxa3 30. Nf3 Nxb4 31. Ne1 g6
+                                    32. Bg4 Qc1 33. Bd7 Nxc2 34. Nxc2 Qxc2+
+               11     0.97     --   29. Ke2
+              time=1.00  cpu=89%  mat=-9  n=2872798  fh=91%  nps=2872k
+              ext-> chk=233790 cap=2087 pp=6245 1rep=16147 mate=184
+              predicted=0  nodes=2872798  evals=522751
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 21%(raw) 17%(depth)  97%(sat)  97%(pawn)
+              hashing-> 0%(exact)  10%(lower)  1%(upper)
+Black(29): f5
+White(30): b5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.06 -12.21   30. b5 d3+ 31. Kxd3 e4+ 32. Ke3 Qe1+
+                                    33. Kf4 Qxd2+ 34. Kxf5 Qd5+ 35. Kf4
+                                    Qe5+ 36. Ke3 Qxb5
+                8     0.09 -12.33   30. b5 d3+ 31. Kxd3 Qd4+ 32. Ke2 Qf2+
+                                    33. Kd1 Qg1+ 34. Ke2 Qxg2+ 35. Kd3
+                                    Qd5+ 36. Ke2 Nd4+ 37. Ke3 Nxb5
+                8->   0.12 -12.33   30. b5 d3+ 31. Kxd3 Qd4+ 32. Ke2 Qf2+
+                                    33. Kd1 Qg1+ 34. Ke2 Qxg2+ 35. Kd3
+                                    Qd5+ 36. Ke2 Nd4+ 37. Ke3 Nxb5
+                9     0.14     --   30. b5
+                9     0.23 -13.05   30. b5 d3+ 31. Kxd3 Qd4+ 32. Ke2 Qf2+
+                                    33. Kd3 e4+ 34. Nxe4 Ne5+ 35. Kc3 Qe3+
+                                    36. Kb2 Nc4+ 37. Kb1 Qxe4 38. Bf7 Nxa3+
+                9->   0.46 -13.05   30. b5 d3+ 31. Kxd3 Qd4+ 32. Ke2 Qf2+
+                                    33. Kd3 e4+ 34. Nxe4 Ne5+ 35. Kc3 Qe3+
+                                    36. Kb2 Nc4+ 37. Kb1 Qxe4 38. Bf7 Nxa3+
+               10     0.48     --   30. b5
+               10     0.81 -13.64   30. b5 d3+ 31. Kxd3 Qd4+ 32. Ke2 Qf2+
+                                    33. Kd3 e4+ 34. Nxe4 fxe4+ 35. Kxe4
+                                    Qxg2+ 36. Bf3 Qxc2+ 37. Kf4 g2 38.
+                                    Bxg2 Qxg2
+              time=1.00  cpu=91%  mat=-9  n=2984615  fh=92%  nps=2984k
+              ext-> chk=242289 cap=2297 pp=9059 1rep=16186 mate=204
+              predicted=0  nodes=2984615  evals=558567
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 18%(raw) 14%(depth)  98%(sat)  96%(pawn)
+              hashing-> 0%(exact)  10%(lower)  1%(upper)
+Black(30): e4
+White(31): bxc6
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.06     --   31. bxc6
+                8     0.09 -13.71   31. bxc6 Qh1 32. Nxe4 Qxh5+ 33. Kd3
+                                    fxe4+ 34. Kxe4 Qe2+ 35. Kxd4 Qd2+ 36.
+                                    Ke4 Qxg2+ 37. Ke3 Qxc6
+                8     0.37 -12.03   31. Nxe4 Qg1 32. Nd6 Qxg2+ 33. Kd3
+                                    Qf1+ 34. Be2 Ne5+ 35. Kxd4 Qxe2 36.
+                                    Nxf5
+                8->   0.45 -12.03   31. Nxe4 Qg1 32. Nd6 Qxg2+ 33. Kd3
+                                    Qf1+ 34. Be2 Ne5+ 35. Kxd4 Qxe2 36.
+                                    Nxf5
+                9     0.50     --   31. Nxe4
+                9     0.59 -12.69   31. Nxe4 fxe4 32. bxc6 Qh1 33. Bf3
+                                    exf3+ 34. Kxf3 Qd1+ 35. Kxg3 bxc6 36.
+                                    Kf4 Qxc2
+                9->   0.76 -12.69   31. Nxe4 fxe4 32. bxc6 Qh1 33. Bf3
+                                    exf3+ 34. Kxf3 Qd1+ 35. Kxg3 bxc6 36.
+                                    Kf4 Qxc2
+               10     0.78     --   31. Nxe4
+              time=1.00  cpu=81%  mat=-9  n=2741355  fh=93%  nps=2741k
+              ext-> chk=219346 cap=4845 pp=15211 1rep=14819 mate=54
+              predicted=0  nodes=2741355  evals=473939
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 27%(raw) 23%(depth)  94%(sat)  96%(pawn)
+              hashing-> 0%(exact)  12%(lower)  1%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                8     0.04 -13.71   31. bxc6 Qh1 32. Nxe4 Qxh5+ 33. Kd3
+                                    fxe4+ 34. Kxe4 Qe2+ 35. Kxd4 Qd2+ 36.
+                                    Ke4 Qxg2+ 37. Ke3 Qxc6
+                8->   0.04 -13.71   31. bxc6 Qh1 32. Nxe4 Qxh5+ 33. Kd3
+                                    fxe4+ 34. Kxe4 Qe2+ 35. Kxd4 Qd2+ 36.
+                                    Ke4 Qxg2+ 37. Ke3 Qxc6
+                9     0.06     --   31. bxc6
+                9     0.18 -15.58   31. bxc6 Qh1 32. c3 Qxg2+ 33. Kd1 Qh1+
+                                    34. Kc2 d3+ 35. Kb3 g2 36. Nxe4 g1=Q
+                9->   0.18 -15.58   31. bxc6 Qh1 32. c3 Qxg2+ 33. Kd1 Qh1+
+                                    34. Kc2 d3+ 35. Kb3 g2 36. Nxe4 g1=Q
+              time=0.18  cpu=88%  mat=-9  n=419668  fh=89%  nps=2331k
+              ext-> chk=31463 cap=1225 pp=7070 1rep=3534 mate=98
+              predicted=0  nodes=419668  evals=45940
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 28%(raw) 22%(depth)  35%(sat)  93%(pawn)
+              hashing-> 0%(exact)  9%(lower)  1%(upper)
+Black(31): bxc6
+White(32): Nb3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7     0.05 -12.13   32. Nf1 Qc1 33. Bg6 Qxc2+ 34. Nd2 e3
+                                    35. Bxf5 Qxf5
+                7     0.08 -11.85   32. Nxe4 fxe4 33. Bf7 Qc1 34. Bb3 d3+
+                                    35. cxd3 Qb2+ 36. Ke3 Qxb3
+                7     0.13 -10.94   32. Bg4 fxg4 33. Nxe4 Qc1 34. Nd2 Qxc2
+                                    35. Ke1
+                7->   0.13 -10.94   32. Bg4 fxg4 33. Nxe4 Qc1 34. Nd2 Qxc2
+                                    35. Ke1
+                8     0.14     --   32. Bg4
+                8     0.14 -11.99   32. Bg4 fxg4 33. Nxe4 Qc1 34. Nd2 Qxc2
+                                    35. Ke1 Qc1+ 36. Ke2 Qxa3
+                8->   0.19 -11.99   32. Bg4 fxg4 33. Nxe4 Qc1 34. Nd2 Qxc2
+                                    35. Ke1 Qc1+ 36. Ke2 Qxa3
+                9     0.21     --   32. Bg4
+                9     0.24 -14.39   32. Bg4 fxg4 33. Nxe4 Qg1 34. Nd2 Qxg2+
+                                    35. Kd3 Qxd2+ 36. Kxd2 g2 37. c3 dxc3+
+                9     0.30 -12.87   32. Nxe4 fxe4 33. Kd2 Qxa3 34. Be8
+                                    Qe3+ 35. Kd1 Qg1+ 36. Kd2 Qxg2+ 37.
+                                    Kc1 e3
+                9     0.47 -12.79   32. Nf1 Qc1 33. Nxg3 Qxc2+ 34. Kf1
+                                    Qc1+ 35. Kf2 Qf4+ 36. Kg1 Qxg3 37.
+                                    Be8 c5
+                9->   0.49 -12.79   32. Nf1 Qc1 33. Nxg3 Qxc2+ 34. Kf1
+                                    Qc1+ 35. Kf2 Qf4+ 36. Kg1 Qxg3 37.
+                                    Be8 c5
+               10     0.71 -12.78   32. Nf1 Qc1 33. Nxg3 Qxc2+ 34. Kf1
+                                    Qc1+ 35. Kf2 Qf4+ 36. Kg1 Qxg3 37.
+                                    Be8 Kc7 38. a4
+               10->   0.78 -12.78   32. Nf1 Qc1 33. Nxg3 Qxc2+ 34. Kf1
+                                    Qc1+ 35. Kf2 Qf4+ 36. Kg1 Qxg3 37.
+                                    Be8 Kc7 38. a4
+               11     0.82     --   32. Nf1
+              time=1.00  cpu=87%  mat=-7  n=3005950  fh=93%  nps=3005k
+              ext-> chk=305282 cap=2986 pp=22330 1rep=20171 mate=285
+              predicted=0  nodes=3005950  evals=383217
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 30%(raw) 27%(depth)  97%(sat)  97%(pawn)
+              hashing-> 0%(exact)  17%(lower)  2%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                9     0.08 -14.96   32. Nb3 Qg1 33. Kd2 Qxg2+ 34. Be2 e3+
+                                    35. Kc1 Qxe2 36. Kb2 Qc4 37. Na5
+                9->   0.08 -14.96   32. Nb3 Qg1 33. Kd2 Qxg2+ 34. Be2 e3+
+                                    35. Kc1 Qxe2 36. Kb2 Qc4 37. Na5
+               10     0.10     --   32. Nb3
+               10     0.19 -15.81   32. Nb3 Qg1 33. Kd2 Qxg2+ 34. Be2 e3+
+                                    35. Kc1 Qxe2 36. Kb2 d3 37. Nd4 Qxc2+
+                                    38. Nxc2 dxc2 39. Kxc2
+               10->   0.19 -15.81   32. Nb3 Qg1 33. Kd2 Qxg2+ 34. Be2 e3+
+                                    35. Kc1 Qxe2 36. Kb2 d3 37. Nd4 Qxc2+
+                                    38. Nxc2 dxc2 39. Kxc2
+              time=0.21  cpu=52%  mat=-7  n=490996  fh=94%  nps=2338k
+              ext-> chk=49049 cap=461 pp=4181 1rep=3764 mate=210
+              predicted=0  nodes=490996  evals=38844
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 34%(raw) 23%(depth)  42%(sat)  97%(pawn)
+              hashing-> 0%(exact)  17%(lower)  2%(upper)
+Black(32): Qg1
+White(33): Nxd4
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8->   0.06 -15.81   33. Kd2 Qxg2+ 34. Be2 e3+ 35. Kc1 Qxe2
+                                    36. Kb2 d3 37. Nd4 Qxc2+ 38. Nxc2 dxc2
+                                    39. Kxc2
+                9     0.06     --   33. Kd2
+                9     0.14 -17.60   33. Kd2 Qxg2+ 34. Be2 Qf2 35. Kc1 g2
+                                    36. Kb2 g1=Q 37. Bc4 g5
+                9->   0.20 -17.60   33. Kd2 Qxg2+ 34. Be2 Qf2 35. Kc1 g2
+                                    36. Kb2 g1=Q 37. Bc4 g5
+               10     0.23     --   33. Kd2
+               10     0.40 -18.64   33. Kd2 Qxg2+ 34. Kc1 Qh1+ 35. Kb2
+                                    Qxh5 36. Nxd4 g2 37. Nxc6+ Kb7 38.
+                                    Nd8+ Kb6 39. Ne6 g1=Q
+               10->   0.56 -18.64   33. Kd2 Qxg2+ 34. Kc1 Qh1+ 35. Kb2
+                                    Qxh5 36. Nxd4 g2 37. Nxc6+ Kb7 38.
+                                    Nd8+ Kb6 39. Ne6 g1=Q
+               11     0.59     --   33. Kd2
+               11     0.82 -19.06   33. Kd2 Qxg2+ 34. Kc1 Qh1+ 35. Kb2
+                                    Qxh5 36. Nxd4 Kb7 37. Ne6 g2 38. a4
+                                    g1=Q 39. Kc3
+              time=1.00  cpu=87%  mat=-7  n=3079882  fh=92%  nps=3079k
+              ext-> chk=306432 cap=2228 pp=43315 1rep=29743 mate=3419
+              predicted=0  nodes=3079882  evals=277608
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 26%(raw) 22%(depth)  98%(sat)  98%(pawn)
+              hashing-> 0%(exact)  14%(lower)  1%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                9     0.11 -30.58   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+
+                9->   0.11 -30.58   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+
+               10     0.11     --   33. Nxd4
+               10     0.43 -Mat10   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+ 42. Ka2 Qxc2#
+               10->   0.43 -Mat10   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+ 42. Ka2 Qxc2#
+               11     2.87 -Mat10   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+ 42. Ka2 Qxc2#
+               11->   2.87 -Mat10   33. Nxd4 Qxg2+ 34. Kd1 Qg1+ 35. Ke2
+                                    Qf2+ 36. Kd1 Qxd4+ 37. Ke2 Qf2+ 38.
+                                    Kd1 g2 39. Kc1 g1=Q+ 40. Bd1 Qd4 41.
+                                    Kb1 Qgxd1+ 42. Ka2 Qxc2#
+              time=2.87  cpu=89%  mat=-7  n=9794638  fh=99%  nps=3412k
+              ext-> chk=1378761 cap=1380 pp=71873 1rep=114556 mate=1641
+              predicted=0  nodes=9794638  evals=134690
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 26%(raw) 24%(depth)  99%(sat)  99%(pawn)
+              hashing-> 0%(exact)  20%(lower)  1%(upper)
+Black(33): Qf2+
+White(34): Kd1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                8     0.04 -12.88   34. Kd1 Qxd4+ 35. Kc1 f4 36. Bf7 Qg1+
+                                    37. Kb2 f3 38. Bg6 Qxg2 39. Bxe4
+                8->   0.04 -12.88   34. Kd1 Qxd4+ 35. Kc1 f4 36. Bf7 Qg1+
+                                    37. Kb2 f3 38. Bg6 Qxg2 39. Bxe4
+                9     0.04     --   34. Kd1
+                9     0.11 -15.07   34. Kd1 Qxd4+ 35. Kc1 f4 36. c3 Qxc3+
+                                    37. Kd1 Qd4+ 38. Ke1 Qg1+ 39. Kd2 Qxg2+
+                                    40. Kc3 Qf3+ 41. Bxf3 exf3
+                9->   0.11 -15.07   34. Kd1 Qxd4+ 35. Kc1 f4 36. c3 Qxc3+
+                                    37. Kd1 Qd4+ 38. Ke1 Qg1+ 39. Kd2 Qxg2+
+                                    40. Kc3 Qf3+ 41. Bxf3 exf3
+               10     0.12     --   34. Kd1
+               10     0.31 -17.57   34. Kd1 Qxd4+ 35. Kc1 f4 36. c3 Qxc3+
+                                    37. Kd1 e3 38. Ke2 Qd2+ 39. Kf3 e2
+                                    40. Be8 e1=Q 41. Bxc6
+               10->   0.31 -17.57   34. Kd1 Qxd4+ 35. Kc1 f4 36. c3 Qxc3+
+                                    37. Kd1 e3 38. Ke2 Qd2+ 39. Kf3 e2
+                                    40. Be8 e1=Q 41. Bxc6
+               11     0.34     --   34. Kd1
+              time=1.00  cpu=92%  mat=-6  n=3518063  fh=95%  nps=3518k
+              ext-> chk=401414 cap=689 pp=26362 1rep=23175 mate=1262
+              predicted=0  nodes=3518063  evals=101455
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 25%(depth)  99%(sat)  98%(pawn)
+              hashing-> 0%(exact)  21%(lower)  2%(upper)
+Black(34): Qxd4+
+White(35): Kc1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                8     0.07 -15.07   35. Kc1 f4 36. c3 Qxc3+ 37. Kd1 Qd4+
+                                    38. Ke1 Qg1+ 39. Kd2 Qxg2+ 40. Kc3
+                                    Qf3+ 41. Bxf3 exf3
+                8->   0.07 -15.07   35. Kc1 f4 36. c3 Qxc3+ 37. Kd1 Qd4+
+                                    38. Ke1 Qg1+ 39. Kd2 Qxg2+ 40. Kc3
+                                    Qf3+ 41. Bxf3 exf3
+                9     0.08     --   35. Kc1
+                9     0.22 -17.57   35. Kc1 f4 36. c3 Qxc3+ 37. Kd1 e3
+                                    38. Ke2 Qd2+ 39. Kf3 e2 40. Be8 e1=Q
+                                    41. Bxc6
+                9->   0.24 -17.57   35. Kc1 f4 36. c3 Qxc3+ 37. Kd1 e3
+                                    38. Ke2 Qd2+ 39. Kf3 e2 40. Be8 e1=Q
+                                    41. Bxc6
+               10     0.25     --   35. Kc1
+               10     0.80 -19.37   35. Kc1 f4 36. Bg6 f3 37. Kb1 fxg2
+                                    38. Ka2 e3 39. c3 Qc4+ 40. Kb2 g1=Q
+               10->   0.83 -19.37   35. Kc1 f4 36. Bg6 f3 37. Kb1 fxg2
+                                    38. Ka2 e3 39. c3 Qc4+ 40. Kb2 g1=Q
+              time=1.00  cpu=91%  mat=-9  n=3371964  fh=94%  nps=3371k
+              ext-> chk=385139 cap=983 pp=27732 1rep=24650 mate=1591
+              predicted=0  nodes=3371964  evals=115721
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 29%(raw) 25%(depth)  98%(sat)  98%(pawn)
+              hashing-> 0%(exact)  21%(lower)  2%(upper)
+Black(35): e3
+White(36): Kb1
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                2     0.00 -Mat01   36. Be2 Qa1#
+                2     0.00 -11.73   36. Kb1 Kc7
+                9     0.05     --   36. Kb1
+                9     0.11 -20.00   36. Kb1 Qc3 37. a4 e2 38. Bxe2 Qe1+
+                                    39. Kb2 Qxe2 40. Kc3 Qxg2
+                9->   0.16 -20.00   36. Kb1 Qc3 37. a4 e2 38. Bxe2 Qe1+
+                                    39. Kb2 Qxe2 40. Kc3 Qxg2
+               10     0.28 -20.00   36. Kb1 Qc3 37. a4 e2 38. Bxe2 Qe1+
+                                    39. Kb2 Qxe2 40. Kc3 c5 41. a5 Qxg2
+               10->   0.30 -20.00   36. Kb1 Qc3 37. a4 e2 38. Bxe2 Qe1+
+                                    39. Kb2 Qxe2 40. Kc3 c5 41. a5 Qxg2
+               11     0.30     --   36. Kb1
+              time=1.00  cpu=92%  mat=-9  n=3541395  fh=98%  nps=3541k
+              ext-> chk=575360 cap=149 pp=27612 1rep=76193 mate=75
+              predicted=0  nodes=3541395  evals=142466
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 35%(raw) 31%(depth)  97%(sat)  99%(pawn)
+              hashing-> 0%(exact)  25%(lower)  2%(upper)
+Black(36): Kb7
+White(37): Bg6
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                7->   0.05 -16.15   37. a4 Qd2 38. a5 e2 39. Bxe2 Qxe2
+                                    40. a6+ Qxa6
+                8     0.05     --   37. a4
+                8     0.07 -18.66   37. a4 Qd2 38. a5 e2 39. a6+ Kxa6 40.
+                                    Kb2 Qb4+ 41. Ka2 e1=Q
+                8     0.11 -17.98   37. Be2 Qd2 38. Bd3 e2 39. Kb2 e1=Q
+                                    40. Kb3 Qb1+ 41. Kc4
+                8->   0.13 -17.98   37. Be2 Qd2 38. Bd3 e2 39. Kb2 e1=Q
+                                    40. Kb3 Qb1+ 41. Kc4
+                9     0.13     --   37. Be2
+                9     0.16 -18.98   37. Be2 Qd2 38. Bd3 e2 39. Kb2 e1=Q
+                                    40. Ka2 f4 41. Kb3 Qxg2
+                9     0.36 -18.73   37. a4 Qd2 38. Bf3 e2 39. Kb2 Qb4+
+                                    40. Ka2 Qxa4+ 41. Kb2 Qb4+ 42. Ka2
+                                    e1=Q
+                9->   0.38 -18.73   37. a4 Qd2 38. Bf3 e2 39. Kb2 Qb4+
+                                    40. Ka2 Qxa4+ 41. Kb2 Qb4+ 42. Ka2
+                                    e1=Q
+               10     0.41     --   37. a4
+               10     0.89 -20.14   37. a4 Qc3 38. a5 e2 39. a6+ Kb6 40.
+                                    Bxe2 Qe1+ 41. Kb2 Qxe2 42. Kc3 Qxg2
+              time=1.00  cpu=89%  mat=-9  n=3489458  fh=96%  nps=3489k
+              ext-> chk=450921 cap=294 pp=52051 1rep=49518 mate=114
+              predicted=0  nodes=3489458  evals=98498
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 37%(raw) 34%(depth)  97%(sat)  99%(pawn)
+              hashing-> 0%(exact)  24%(lower)  2%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                7     0.02 -Mat05   37. Bg6 e2 38. Ka2 Qc4+ 39. Kb2 e1=Q
+                                    40. Bxf5 Qcc3+ 41. Ka2 Qea1#
+                8     1.46 -Mat04   37. Bg6 e2 38. Ka2 e1=Q 39. Bxf5 Qea1+
+                                    40. Kb3 Qb1#
+                8->   1.46 -Mat04   37. Bg6 e2 38. Ka2 e1=Q 39. Bxf5 Qea1+
+                                    40. Kb3 Qb1#
+                9     1.69 -Mat04   37. Bg6 e2 38. Ka2 e1=Q 39. Bxf5 Qea1+
+                                    40. Kb3 Qb1#
+                9->   1.69 -Mat04   37. Bg6 e2 38. Ka2 e1=Q 39. Bxf5 Qea1+
+                                    40. Kb3 Qb1#
+              time=3.00  cpu=84%  mat=-9  n=11809642  fh=99%  nps=3936k
+              ext-> chk=2107475 cap=418 pp=15868 1rep=210180 mate=1
+              predicted=0  nodes=11809642  evals=25673
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 35%(raw) 33%(depth)  99%(sat)  99%(pawn)
+              hashing-> 0%(exact)  27%(lower)  1%(upper)
+Black(37): e2
+White(38): Bxf5
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00)
+              depth   time  score   variation (1)
+                3     0.00 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                3     0.00 -18.10   38. Ka2 Qc4+ 39. Kb2 Qb5+ 40. Kc3 e1=Q+
+                6     0.01 -Mat04   38. Ka2 Qc4+ 39. Kb2 e1=Q 40. Bh5 Qcc3+
+                                    41. Ka2 Qxc2#
+                6->   0.14 -Mat04   38. Ka2 Qc4+ 39. Kb2 e1=Q 40. Bh5 Qcc3+
+                                    41. Ka2 Qxc2#
+                7     0.25 -Mat03   38. Ka2 e1=Q 39. Bxf5 Qea1+ 40. Kb3
+                                    Qb1#
+              time=1.00  cpu=97%  mat=-9  n=3908209  fh=99%  nps=3908k
+              ext-> chk=599808 cap=58 pp=848 1rep=71582 mate=0
+              predicted=0  nodes=3908209  evals=11203
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 31%(raw) 28%(depth)  97%(sat)  99%(pawn)
+              hashing-> 0%(exact)  24%(lower)  1%(upper)
+
+              Searching only the move played in game.--------------------
+              time surplus   0.00  time limit 3.00 (3.00)
+              depth   time  score   variation (1)
+                3     0.00 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                4     0.00 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                5     0.01 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                6     0.09 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                6->   0.09 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                7     0.45 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+                7->   0.45 -Mat03   38. Bxf5 e1=Q+ 39. Ka2 Qea1+ 40. Kb3
+                                    Qb1#
+              time=0.45  cpu=80%  mat=-9  n=1423659  fh=100%  nps=3163k
+              ext-> chk=208231 cap=71 pp=818 1rep=21807 mate=0
+              predicted=0  nodes=1423659  evals=3039
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 37%(raw) 29%(depth)  71%(sat)  99%(pawn)
+              hashing-> 0%(exact)  23%(lower)  1%(upper)
+Black(38): e1=R+
+White(39): Ka2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                3     0.00 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                4     0.00 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                5     0.01 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                6     0.04 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                7     0.12 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                7->   0.12 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                8     0.39 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+                8->   0.39 -Mat03   39. Ka2 Ra1+ 40. Kb3 Rb1+ 41. Ka2 Qa1#
+              time=1.00  cpu=85%  mat=-12  n=4021846  fh=99%  nps=4021k
+              ext-> chk=508204 cap=231 pp=2162 1rep=52208 mate=19
+              predicted=0  nodes=4021846  evals=42032
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 33%(raw) 27%(depth)  96%(sat)  99%(pawn)
+              hashing-> 0%(exact)  22%(lower)  2%(upper)
+Black(39): Ra1+
+White(40): Kb3
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                3     0.00 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                4     0.00 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                5     0.02 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                6     0.03 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                7     0.08 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                7->   0.08 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                8     0.25 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+                8->   0.25 -Mat02   40. Kb3 Rb1+ 41. Ka2 Qa1#
+              time=1.00  cpu=82%  mat=-12  n=3921963  fh=99%  nps=3921k
+              ext-> chk=484558 cap=202 pp=3433 1rep=40947 mate=0
+              predicted=0  nodes=3921963  evals=58895
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 34%(raw) 29%(depth)  97%(sat)  99%(pawn)
+              hashing-> 0%(exact)  23%(lower)  2%(upper)
+Black(40): Rb1+
+White(41): Ka2
+
+              Searching all legal moves.----------------------------------
+              time surplus   0.00  time limit 1.00 (1.00) [easy move]
+              depth   time  score   variation (1)
+                2     0.00 -Mat01   41. Ka2 Qa1#
+                3     0.00 -Mat01   41. Ka2 Qa1#
+                4     0.00 -Mat01   41. Ka2 Qa1#
+                5     0.02 -Mat01   41. Ka2 Qa1#
+                6     0.02 -Mat01   41. Ka2 Qa1#
+                7     0.05 -Mat01   41. Ka2 Qa1#
+                8     0.16 -Mat01   41. Ka2 Qa1#
+                8->   0.16 -Mat01   41. Ka2 Qa1#
+                9     0.92 -Mat01   41. Ka2 Qa1#
+                9->   0.92 -Mat01   41. Ka2 Qa1#
+              time=1.00  cpu=87%  mat=-12  n=4017751  fh=99%  nps=4017k
+              ext-> chk=513271 cap=215 pp=8774 1rep=52567 mate=0
+              predicted=0  nodes=4017751  evals=105464
+              endgame tablebase-> probes done=0  successful=0
+              hashing-> 35%(raw) 31%(depth)  97%(sat)  99%(pawn)
+              hashing-> 0%(exact)  24%(lower)  2%(upper)
+Black(41): Qb2#

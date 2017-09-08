@@ -1,0 +1,28 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[WhiteElo ""]
+[Black "?"]
+[BlackElo ""]
+[Result "0-1"]
+[Annotator "Crafty v19.3"]
+{annotating only white moves.}
+{using a scoring margin of -1.00 pawns.}
+{search time limit is 1.00}
+
+  1.      e3
+                ({9:-0.01}  1. e3 e5 2. Nc3 d5 3. Nf3 e4 4. Ne5 Nf6 5. Be2 $10)
+                ({9:+0.03}  1. e4 Nc6 2. Nf3 Nf6 3. Nc3 d5 4. e5 Ne4 5. d4 Nxc3 6. bxc3 $10)
+
+  1.     ...      e5
+  2.      g4
+                ({8:-0.53}  2. g4 Nf6 3. Be2 Nc6 4. Nc3 d5 5. d4 e4 $15)
+                ({8:-0.14}  2. d4 exd4 3. Qxd4 Nc6 4. Qe4+ Nge7 5. Bb5 d5 6. Qe5 $10)
+
+  2.     ...      e4
+
+       0-1 
+
+
