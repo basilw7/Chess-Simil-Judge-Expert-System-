@@ -76,7 +76,7 @@ while ($table_num < 16){
 		}
 		print "$filename P Score: $pScore\n";
 		
-		#find name and write with score
+		#find name and write score
 		open (InFile, $filename.".meta");
 		@info = <InFile>;
 		close (InFile);
