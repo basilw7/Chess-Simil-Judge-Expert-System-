@@ -1,7 +1,7 @@
 # Description
-This project is incomplete. I will admit its current state is a mess, and much of the functionality is missing. However, in it's current state it can still perform its primary purpose, and did so in full agreement with a Nationaly ranked chess master who played each game.
+This project is incomplete. I will admit its current state is a mess, and much of the functionality is missing. However, in its current state, it can still perform its primary purpose and did so in full agreement with a Nationally ranked chess master who played each game.
 
-This project's purpose is to analyze, and rank a collection of games played against an opponent of constant strength. Such as at a chess simil. It does this by evaluating and aggregating the players replies. Once all the players moves are aggregated, a score is produce and writing to an html file. This is the state of the project at the time of its use at a simil demonstration.
+This project's purpose is to analyze and rank a collection of games played against an opponent of constant strength. Such as at a chess simul. It does this by evaluating and aggregating the player's replies. Once all the player's moves are aggregated, a score is produced and written to an HTML file. This is the state of the project at the time of its use at a simul demonstration.
 
 # Install
 
